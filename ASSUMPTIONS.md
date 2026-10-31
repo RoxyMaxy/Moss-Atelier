@@ -20,3 +20,9 @@
 
 
 
+- Fix: "same gifts" bug. Cause: exact tag matching scored unknown traits 0, and ties were broken by catalogue order. Now js/match.js provides accent-free matching, simple stemming, a synonym table, and a seeded FNV-1a tie-break derived from the query. Ties never use catalogue order. Covered by tests/variety.test.js.
+- Fix: catalogue extended from 126 to 164 entries (38 new gifts for sport, music, games, pets, books, travel, tech, art, cooking, drinks, photography, children). New entries are generic and need author review before the pgvector index is rebuilt.
+- Fix: rationale now calls Ollama /api/chat (gemma3:1b, format json, num_ctx 2048) instead of llama.cpp on port 8080. The /healthz check queries Ollama /api/tags. The backend that answered is recorded in the gift.rationale span.
+- Known limitation: live search is keyword and synonym based. Embeddings (nomic-embed-text) are planned but not wired in. Some weak matches remain (for example a coffee grinder can match "running" through a summary word); the next step is semantic retrieval.
+- Fix: npm test runs node --test tests/*.js, because the directory form fails on the installed Node version.
+- The pgvector index (catalog_items) must be rebuilt with catalog/build-index.mjs after the catalogue change, otherwise the database path serves the old 126 entries.

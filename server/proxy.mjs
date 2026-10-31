@@ -41,6 +41,26 @@ async function checkLocalModelHealth(url) {
   }
 }
 
+async function checkOllamaModels() {
+  const chatName = process.env.OLLAMA_MODEL || 'gemma3:1b';
+  const embedName = process.env.OLLAMA_EMBED_MODEL || 'nomic-embed-text';
+  try {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 1500);
+    const res = await fetch('http://127.0.0.1:11434/api/tags', { signal: controller.signal });
+    clearTimeout(timeout);
+    if (!res.ok) return { chat: false, embed: false };
+    const data = await res.json();
+    const names = (data.models || []).map(m => m.name);
+    return {
+      chat: names.some(n => n === chatName || n.startsWith(chatName + ':')),
+      embed: names.some(n => n === embedName || n.startsWith(embedName + ':'))
+    };
+  } catch {
+    return { chat: false, embed: false };
+  }
+}
+
 const server = http.createServer(async (req, res) => {
   const parsedUrl = new URL(req.url, `http://${req.headers.host || '127.0.0.1'}`);
   const pathname = parsedUrl.pathname;
@@ -67,8 +87,7 @@ const server = http.createServer(async (req, res) => {
   // 1. Healthcheck Endpoint (/healthz)
   if (pathname === '/healthz' && req.method === 'GET') {
     const dbOk = await checkDatabaseHealth();
-    const llamaChatOk = await checkLocalModelHealth('http://127.0.0.1:8080/v1/models');
-    const llamaEmbedOk = await checkLocalModelHealth('http://127.0.0.1:8081/v1/models');
+    const ollama = await checkOllamaModels();
 
     res.writeHead(200, { 'Content-Type': 'application/json' });
     res.end(JSON.stringify({
@@ -77,8 +96,8 @@ const server = http.createServer(async (req, res) => {
       live: Boolean(process.env.GEMINI_API_KEY && process.env.HOSTED_API_URL),
       database: dbOk,
       models: {
-        chat_local: llamaChatOk,
-        embed_local: llamaEmbedOk
+        chat_local: ollama.chat,
+        embed_local: ollama.embed
       },
       cache: globalCache.stats()
     }));

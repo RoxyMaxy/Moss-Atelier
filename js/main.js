@@ -174,7 +174,8 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       tracer.recordSpan('gift.rationale', {
-        grounded_count: groundedPicks.length
+        grounded_count: groundedPicks.length,
+        backend: groundedPicks.backend || 'unknown'
       });
 
       // Render BUY list

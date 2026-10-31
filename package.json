@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node --env-file=.env server/proxy.mjs",
     "build:config": "node scripts/build-config.mjs",
-    "test": "node --test"
+    "test": "node --test tests/*.js"
   },
   "keywords": [
     "hacktoberfest",

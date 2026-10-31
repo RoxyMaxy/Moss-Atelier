@@ -3313,5 +3313,770 @@
     "minutes": 15,
     "difficulty": 1,
     "safety": null
+  },
+  {
+    "id": "gift-107",
+    "kind": "gift",
+    "title": "Adjustable Yoga Mat with Carry Strap",
+    "summary": "Non-slip natural rubber mat for home practice, rolls up for a bag. Useful for anyone who trains indoors or stretches before work.",
+    "tags": [
+      "sport",
+      "yoga",
+      "fitness",
+      "wellness"
+    ],
+    "occasions": [
+      "birthday",
+      "just-because",
+      "new-year"
+    ],
+    "price_band": "medium",
+    "price": 32,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-108",
+    "kind": "gift",
+    "title": "Stainless Steel Water Bottle, Insulated",
+    "summary": "Keeps drinks cold on a long hike or a run. Simple lid, easy to clean, a practical gift for anyone outdoors.",
+    "tags": [
+      "sport",
+      "hiking",
+      "running",
+      "outdoor"
+    ],
+    "occasions": [
+      "birthday",
+      "holiday",
+      "thank-you"
+    ],
+    "price_band": "low",
+    "price": 24,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-109",
+    "kind": "gift",
+    "title": "Running Socks, Merino Blend, Three Pairs",
+    "summary": "Breathable merino socks that resist odour on long runs. A small, useful upgrade for a regular runner.",
+    "tags": [
+      "sport",
+      "running",
+      "fitness"
+    ],
+    "occasions": [
+      "birthday",
+      "holiday"
+    ],
+    "price_band": "low",
+    "price": 19,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-110",
+    "kind": "gift",
+    "title": "Foam Roller for Recovery",
+    "summary": "Firm roller for muscles after training. Compact enough for a flat, practical present for an active person.",
+    "tags": [
+      "sport",
+      "fitness",
+      "wellness",
+      "recovery"
+    ],
+    "occasions": [
+      "birthday",
+      "just-because"
+    ],
+    "price_band": "medium",
+    "price": 27,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-111",
+    "kind": "gift",
+    "title": "Football Scarf in Team Colours, Knitted",
+    "summary": "Warm knitted scarf for match days. Choose a team colour palette that suits the recipient's own club.",
+    "tags": [
+      "sport",
+      "football",
+      "soccer",
+      "winter"
+    ],
+    "occasions": [
+      "birthday",
+      "holiday"
+    ],
+    "price_band": "low",
+    "price": 18,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-112",
+    "kind": "gift",
+    "title": "Vinyl Record Cleaning Kit",
+    "summary": "Brush, fluid and cloth for keeping records clean and quiet. A good companion gift for anyone with a turntable.",
+    "tags": [
+      "music",
+      "vinyl",
+      "audio",
+      "listening"
+    ],
+    "occasions": [
+      "birthday",
+      "holiday",
+      "just-because"
+    ],
+    "price_band": "low",
+    "price": 22,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-113",
+    "kind": "gift",
+    "title": "Wooden Ukulele for Beginners",
+    "summary": "Compact, bright-sounding ukulele with a simple tuning guide. Suited to a first instrument or a playful gift.",
+    "tags": [
+      "music",
+      "instrument",
+      "guitar",
+      "beginner"
+    ],
+    "occasions": [
+      "birthday",
+      "holiday"
+    ],
+    "price_band": "medium",
+    "price": 59,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-114",
+    "kind": "gift",
+    "title": "Bluetooth Speaker, Small and Round",
+    "summary": "Portable speaker for kitchen, garden or desk. Clear sound in a compact body for everyday listening.",
+    "tags": [
+      "music",
+      "audio",
+      "tech",
+      "outdoor"
+    ],
+    "occasions": [
+      "birthday",
+      "housewarming",
+      "holiday"
+    ],
+    "price_band": "medium",
+    "price": 45,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-115",
+    "kind": "gift",
+    "title": "Concert Poster Print, Framed",
+    "summary": "Framed print of a favourite album or a local venue. Easy to personalise with a date the recipient will remember.",
+    "tags": [
+      "music",
+      "art",
+      "decor",
+      "concert"
+    ],
+    "occasions": [
+      "birthday",
+      "anniversary"
+    ],
+    "price_band": "medium",
+    "price": 38,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-116",
+    "kind": "gift",
+    "title": "Headphone Stand in Walnut",
+    "summary": "Solid wood stand that keeps headphones on the desk and off the floor. Tidy, simple, and useful every day.",
+    "tags": [
+      "music",
+      "desk",
+      "tech",
+      "wood"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 26,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-117",
+    "kind": "gift",
+    "title": "Strategy Board Game for Two",
+    "summary": "Short two-player strategy game with quick rules. Good for quiet evenings and easy to bring out again.",
+    "tags": [
+      "game",
+      "board",
+      "strategy",
+      "quiet"
+    ],
+    "occasions": [
+      "birthday",
+      "anniversary",
+      "holiday"
+    ],
+    "price_band": "medium",
+    "price": 34,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-118",
+    "kind": "gift",
+    "title": "Jigsaw Puzzle, 1000 Pieces, Landscape",
+    "summary": "A calm, slow activity for a rainy weekend. Choose a landscape the recipient will enjoy completing.",
+    "tags": [
+      "game",
+      "puzzle",
+      "quiet",
+      "relaxing"
+    ],
+    "occasions": [
+      "birthday",
+      "holiday",
+      "just-because"
+    ],
+    "price_band": "low",
+    "price": 17,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-119",
+    "kind": "gift",
+    "title": "Retro Handheld Card Game Set",
+    "summary": "Classic playing cards in a sturdy case, with rules for several games. A social gift for family evenings.",
+    "tags": [
+      "game",
+      "cards",
+      "social",
+      "family"
+    ],
+    "occasions": [
+      "birthday",
+      "holiday"
+    ],
+    "price_band": "low",
+    "price": 15,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-120",
+    "kind": "gift",
+    "title": "Cat Toy Bundle, Wool and Feather",
+    "summary": "Set of soft toys for a curious cat. Gentle on paws and easy to tidy away after play.",
+    "tags": [
+      "pets",
+      "cat",
+      "cats",
+      "animal",
+      "play"
+    ],
+    "occasions": [
+      "birthday",
+      "housewarming",
+      "just-because"
+    ],
+    "price_band": "low",
+    "price": 16,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-121",
+    "kind": "gift",
+    "title": "Dog Walking Leash, Leather Handle",
+    "summary": "Comfortable leather-handled leash for daily walks. Sturdy stitching and a simple clip.",
+    "tags": [
+      "pets",
+      "dog",
+      "dogs",
+      "outdoor",
+      "walk"
+    ],
+    "occasions": [
+      "birthday",
+      "housewarming"
+    ],
+    "price_band": "medium",
+    "price": 29,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-122",
+    "kind": "gift",
+    "title": "Bird Feeder for the Window",
+    "summary": "Small window-mounted feeder with suction cups. Brings birds close enough to watch from a chair.",
+    "tags": [
+      "pets",
+      "nature",
+      "birds",
+      "garden",
+      "quiet"
+    ],
+    "occasions": [
+      "birthday",
+      "housewarming",
+      "thank-you"
+    ],
+    "price_band": "low",
+    "price": 21,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-123",
+    "kind": "gift",
+    "title": "Illustrated Field Guide to Birds",
+    "summary": "Compact guide with clear photos, for identifying the birds in a garden or park. A patient, outdoorsy read.",
+    "tags": [
+      "books",
+      "nature",
+      "birds",
+      "reading",
+      "garden"
+    ],
+    "occasions": [
+      "birthday",
+      "holiday",
+      "just-because"
+    ],
+    "price_band": "low",
+    "price": 20,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-124",
+    "kind": "gift",
+    "title": "Short Story Anthology, Hardback",
+    "summary": "A carefully chosen collection of short stories, ideal for reading in small pieces before bed.",
+    "tags": [
+      "books",
+      "reading",
+      "literature",
+      "quiet"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday"
+    ],
+    "price_band": "low",
+    "price": 23,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-125",
+    "kind": "gift",
+    "title": "Notebook for Travel Sketches",
+    "summary": "Thick-paper sketchbook with an elastic closure, made for drawings and notes on the road.",
+    "tags": [
+      "travel",
+      "art",
+      "writing",
+      "sketch"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "just-because"
+    ],
+    "price_band": "low",
+    "price": 18,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-126",
+    "kind": "gift",
+    "title": "Travel Adapter with Three USB Ports",
+    "summary": "Universal adapter for trips abroad, with USB charging. Practical for any traveller.",
+    "tags": [
+      "travel",
+      "tech",
+      "trip",
+      "adapter"
+    ],
+    "occasions": [
+      "birthday",
+      "holiday",
+      "thank-you"
+    ],
+    "price_band": "low",
+    "price": 28,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-127",
+    "kind": "gift",
+    "title": "Compact Packing Cubes Set",
+    "summary": "Set of lightweight cubes that keep a suitcase tidy. Helps anyone who packs in a rush.",
+    "tags": [
+      "travel",
+      "trip",
+      "organisation",
+      "luggage"
+    ],
+    "occasions": [
+      "birthday",
+      "holiday",
+      "thank-you"
+    ],
+    "price_band": "low",
+    "price": 25,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-128",
+    "kind": "gift",
+    "title": "Regional Map Print of a Favourite Place",
+    "summary": "Hand-drawn style map of a city, island or trail the recipient loves, printed on heavy paper.",
+    "tags": [
+      "travel",
+      "art",
+      "decor",
+      "map",
+      "nature"
+    ],
+    "occasions": [
+      "birthday",
+      "anniversary",
+      "housewarming"
+    ],
+    "price_band": "medium",
+    "price": 35,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-129",
+    "kind": "gift",
+    "title": "Wireless Earbuds Case, Silicone",
+    "summary": "Soft protective case for earbuds with a clip. Keeps them safe in a bag or pocket.",
+    "tags": [
+      "tech",
+      "gadget",
+      "audio",
+      "accessory"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "just-because"
+    ],
+    "price_band": "low",
+    "price": 14,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-130",
+    "kind": "gift",
+    "title": "Desk Lamp with Warm Dimmer",
+    "summary": "Small lamp with a warm light setting, suited to evening reading or late work at a desk.",
+    "tags": [
+      "tech",
+      "desk",
+      "quiet",
+      "home",
+      "lighting"
+    ],
+    "occasions": [
+      "birthday",
+      "housewarming",
+      "holiday"
+    ],
+    "price_band": "medium",
+    "price": 42,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-131",
+    "kind": "gift",
+    "title": "Mechanical Pencil Set, Metal Body",
+    "summary": "Precise pencils with a weighty feel, for sketching or writing. A small luxury for daily use.",
+    "tags": [
+      "writing",
+      "stationery",
+      "art",
+      "pen"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "just-because"
+    ],
+    "price_band": "low",
+    "price": 16,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-132",
+    "kind": "gift",
+    "title": "Beginner Pottery Class Voucher",
+    "summary": "Voucher for an introductory pottery session. An active, hands-on gift that takes an afternoon.",
+    "tags": [
+      "art",
+      "craft",
+      "pottery",
+      "handmade",
+      "hands-on"
+    ],
+    "occasions": [
+      "birthday",
+      "anniversary",
+      "just-because"
+    ],
+    "price_band": "medium",
+    "price": 45,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-133",
+    "kind": "gift",
+    "title": "Embroidery Kit with Botanical Pattern",
+    "summary": "Starter kit with hoop, fabric, threads and a plant pattern. Slow stitching for quiet evenings.",
+    "tags": [
+      "art",
+      "craft",
+      "sewing",
+      "botanical",
+      "quiet"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday"
+    ],
+    "price_band": "low",
+    "price": 19,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-134",
+    "kind": "gift",
+    "title": "Watercolour Set, Twelve Pans",
+    "summary": "Portable paint set with a brush and a small pad. Good for anyone who sketches outdoors.",
+    "tags": [
+      "art",
+      "painting",
+      "drawing",
+      "outdoor"
+    ],
+    "occasions": [
+      "birthday",
+      "holiday",
+      "just-because"
+    ],
+    "price_band": "medium",
+    "price": 31,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-135",
+    "kind": "gift",
+    "title": "Cookbook of Slow Weekend Recipes",
+    "summary": "Recipes for long, unhurried meals, with clear steps and seasonal notes.",
+    "tags": [
+      "cooking",
+      "food",
+      "recipes",
+      "kitchen",
+      "slow"
+    ],
+    "occasions": [
+      "birthday",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 26,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-136",
+    "kind": "gift",
+    "title": "Sourdough Starter Kit with Banneton",
+    "summary": "Basket, scraper and jar for a home bread routine. A patient gift for a baker in the making.",
+    "tags": [
+      "cooking",
+      "baking",
+      "bread",
+      "kitchen"
+    ],
+    "occasions": [
+      "birthday",
+      "housewarming",
+      "holiday"
+    ],
+    "price_band": "medium",
+    "price": 33,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-137",
+    "kind": "gift",
+    "title": "Spice Blend Trio in Glass Jars",
+    "summary": "Three house blends with recipe cards. Easy to use, pleasant to open, good for any kitchen.",
+    "tags": [
+      "cooking",
+      "food",
+      "kitchen",
+      "spice"
+    ],
+    "occasions": [
+      "birthday",
+      "housewarming",
+      "thank-you"
+    ],
+    "price_band": "low",
+    "price": 21,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-138",
+    "kind": "gift",
+    "title": "Cocktail Shaker and Jigger Set",
+    "summary": "Stainless steel set with a recipe booklet, for mixing drinks at home with friends.",
+    "tags": [
+      "wine",
+      "drink",
+      "cocktail",
+      "social",
+      "kitchen"
+    ],
+    "occasions": [
+      "birthday",
+      "housewarming",
+      "holiday"
+    ],
+    "price_band": "medium",
+    "price": 36,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-139",
+    "kind": "gift",
+    "title": "Wine Aerator and Stopper Pair",
+    "summary": "Simple aerating pourer and a sealing stopper. Helpful for anyone who enjoys a glass at home.",
+    "tags": [
+      "wine",
+      "drink",
+      "kitchen",
+      "accessory"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 18,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-140",
+    "kind": "gift",
+    "title": "Analog Film Camera Starter Pack",
+    "summary": "Reusable compact film camera with a roll and a short guide. Slows down how photos are taken.",
+    "tags": [
+      "photo",
+      "photography",
+      "camera",
+      "art"
+    ],
+    "occasions": [
+      "birthday",
+      "anniversary",
+      "just-because"
+    ],
+    "price_band": "high",
+    "price": 75,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-141",
+    "kind": "gift",
+    "title": "Photo Book with Printed Pages",
+    "summary": "Softcover book of selected photos, printed on matte paper. A slow way to share memories.",
+    "tags": [
+      "photo",
+      "photography",
+      "memory",
+      "decor"
+    ],
+    "occasions": [
+      "birthday",
+      "anniversary",
+      "thank-you"
+    ],
+    "price_band": "medium",
+    "price": 34,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-142",
+    "kind": "gift",
+    "title": "Kids' Building Blocks, Wooden Set",
+    "summary": "Natural wood blocks in simple shapes, for open-ended play. Suitable for young children.",
+    "tags": [
+      "child",
+      "children",
+      "kids",
+      "toy",
+      "play",
+      "wood"
+    ],
+    "occasions": [
+      "birthday",
+      "holiday"
+    ],
+    "price_band": "low",
+    "price": 28,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-143",
+    "kind": "gift",
+    "title": "Kids' Science Kit for Curious Minds",
+    "summary": "Safe experiments with clear instructions and a booklet. Encourages questions and small discoveries.",
+    "tags": [
+      "child",
+      "children",
+      "kids",
+      "science",
+      "play"
+    ],
+    "occasions": [
+      "birthday",
+      "holiday"
+    ],
+    "price_band": "medium",
+    "price": 39,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-144",
+    "kind": "gift",
+    "title": "Picture Book with Gentle Illustrations",
+    "summary": "Quiet bedtime story with soft pictures, suited to a child who likes calm evenings.",
+    "tags": [
+      "child",
+      "children",
+      "kids",
+      "reading",
+      "books",
+      "quiet"
+    ],
+    "occasions": [
+      "birthday",
+      "holiday",
+      "just-because"
+    ],
+    "price_band": "low",
+    "price": 15,
+    "currency": "EUR"
   }
 ]
