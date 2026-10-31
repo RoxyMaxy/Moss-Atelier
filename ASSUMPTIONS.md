@@ -8,6 +8,8 @@
 - Memory Threshold: build-index.mjs executes free -m and halts if free RAM < 1000 MB. Verified halt with 206 MB free RAM.
 - Hybrid Retrieval: Reciprocal Rank Fusion implemented with constant k = 60, combining trait relevance and occasion matching with a +10% max budget tolerance filter.
 - Phase 3 Ranking & Grounding: Deterministic scoring weighted 40% trait, 30% occasion, 30% budget fit. Grounding validator strictly discards unretrieved IDs, sanitizes ungrounded numeric claims, and fills up to 3 picks using deterministic templates.
+- Phase 4 DIY & Safety: Maximum 6 steps enforced. Keyword scanner monitors knife, cutter, heat, iron, glue gun, solder, bleach, battery and automatically supplies generic safety warning if absent.
+
 
 
 
