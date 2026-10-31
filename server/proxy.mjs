@@ -104,12 +104,10 @@ const server = http.createServer(async (req, res) => {
         const catalogData = JSON.parse(fs.readFileSync(catalogPath, 'utf-8'));
 
         const pool = getPool();
-        // If pg database is active with catalog_items table, query it
         if (pool && await checkDatabaseHealth()) {
           try {
             const client = await pool.connect();
             try {
-              // Full text query with tsv
               const queryText = (payload.traits || []).join(' ') + ' ' + (payload.occasion || '');
               const ftsRes = await client.query(
                 `SELECT id, payload FROM catalog_items 
@@ -132,7 +130,6 @@ const server = http.createServer(async (req, res) => {
           }
         }
 
-        // Fast in-memory RRF retrieval from catalog.json
         const candidates = retrieveCandidates(catalogData, payload);
         res.writeHead(200, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({
@@ -142,6 +139,111 @@ const server = http.createServer(async (req, res) => {
       } catch (err) {
         res.writeHead(400, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({ error: 'Invalid JSON request' }));
+      }
+    });
+    return;
+  }
+
+  // 3. Live Search Proxy (/api/search)
+  if (pathname === '/api/search' && req.method === 'POST') {
+    let body = '';
+    req.on('data', chunk => {
+      body += chunk;
+      if (body.length > 16384) {
+        res.writeHead(413, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ error: 'Payload too large' }));
+        req.destroy();
+      }
+    });
+
+    req.on('end', async () => {
+      try {
+        const payload = JSON.parse(body || '{}');
+        const { engine, q, gl = 'fr', hl = 'fr', min_price, max_price } = payload;
+
+        // Allowlist check: only google_shopping and youtube
+        if (engine !== 'google_shopping' && engine !== 'youtube') {
+          res.writeHead(400, { 'Content-Type': 'application/json' });
+          res.end(JSON.stringify({ error: 'Disallowed search engine' }));
+          return;
+        }
+
+        if (!process.env.SERPAPI_KEY) {
+          res.writeHead(503, { 'Content-Type': 'application/json' });
+          res.end(JSON.stringify({ error: 'SERPAPI_KEY not configured on server' }));
+          return;
+        }
+
+        // Cache lookup
+        const cacheKey = `${engine}:${q}:${gl}:${hl}:${min_price || ''}:${max_price || ''}`;
+        const cached = globalCache.get(cacheKey);
+        if (cached) {
+          res.writeHead(200, {
+            'Content-Type': 'application/json',
+            'X-Cache': 'HIT'
+          });
+          res.end(JSON.stringify({ results: cached }));
+          return;
+        }
+
+        const serpUrl = new URL('https://serpapi.com/search.json');
+        serpUrl.searchParams.set('api_key', process.env.SERPAPI_KEY);
+        serpUrl.searchParams.set('engine', engine);
+        serpUrl.searchParams.set('gl', gl);
+        serpUrl.searchParams.set('hl', hl);
+
+        if (engine === 'youtube') {
+          serpUrl.searchParams.set('search_query', q || '');
+        } else {
+          serpUrl.searchParams.set('q', q || '');
+          if (min_price) serpUrl.searchParams.set('min_price', String(min_price));
+          if (max_price) serpUrl.searchParams.set('max_price', String(max_price));
+        }
+
+        const upstreamRes = await fetch(serpUrl.toString());
+        if (!upstreamRes.ok) {
+          res.writeHead(502, { 'Content-Type': 'application/json' });
+          res.end(JSON.stringify({ error: 'Upstream search provider error' }));
+          return;
+        }
+
+        const raw = await upstreamRes.json();
+        let normalized = [];
+
+        if (engine === 'google_shopping') {
+          const items = raw.shopping_results || [];
+          normalized = items.slice(0, 10).map(item => ({
+            title: item.title,
+            price: item.extracted_price || null,
+            currency: item.currency || 'EUR',
+            source: item.source || 'Store',
+            link: item.link,
+            rating: item.rating || null,
+            reviews: item.reviews || null,
+            thumbnail: item.thumbnail || null
+          }));
+        } else if (engine === 'youtube') {
+          const videos = raw.video_results || [];
+          normalized = videos.slice(0, 4).map(v => ({
+            title: v.title,
+            channel: v.channel?.name || 'Creator',
+            duration: v.duration || '',
+            link: v.link,
+            views: v.views || null
+          }));
+        }
+
+        const ttlHours = Number(process.env.SERPAPI_CACHE_HOURS) || 24;
+        globalCache.set(cacheKey, normalized, ttlHours * 3600 * 1000);
+
+        res.writeHead(200, {
+          'Content-Type': 'application/json',
+          'X-Cache': 'MISS'
+        });
+        res.end(JSON.stringify({ results: normalized }));
+      } catch (err) {
+        res.writeHead(400, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ error: 'Invalid request' }));
       }
     });
     return;

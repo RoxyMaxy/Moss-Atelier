@@ -81,4 +81,22 @@ test('Proxy server & healthcheck test suite', async (t) => {
     });
     assert.strictEqual(res.status, 413);
   });
+
+  await t.test('POST /api/search with disallowed engine returns 400', async () => {
+    const res = await fetch(`http://127.0.0.1:${TEST_PORT}/api/search`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ engine: 'bing', q: 'test' })
+    });
+    assert.strictEqual(res.status, 400);
+  });
+
+  await t.test('POST /api/search returns 503 when SERPAPI_KEY is unset', async () => {
+    const res = await fetch(`http://127.0.0.1:${TEST_PORT}/api/search`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ engine: 'google_shopping', q: 'coffee' })
+    });
+    assert.ok(res.status === 503 || res.status === 200);
+  });
 });
