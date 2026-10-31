@@ -4,4 +4,8 @@
 - Secret Isolation: Client bundle and public configurations are strictly separated via scripts/build-config.mjs.
 - Health Check: /healthz reports operational status and readiness booleans without revealing secret values or connection strings.
 - Visual Design: Atelier Night theme implemented with Fraunces, Atkinson Hyperlegible, and Press Start 2P typeface hierarchy with system fallbacks and SIL OFL documentation. Custom 64x64 pixel sloth sprite drawn procedurally in code.
+- Phase 2 Catalogue: 126 curated entries (106 gifts, 20 DIY projects) released under CC0. All entries are generic without third-party brand trademarks.
+- Memory Threshold: build-index.mjs executes free -m and halts if free RAM < 1000 MB. Verified halt with 206 MB free RAM.
+- Hybrid Retrieval: Reciprocal Rank Fusion implemented with constant k = 60, combining trait relevance and occasion matching with a +10% max budget tolerance filter.
+
 

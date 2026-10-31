@@ -5,9 +5,10 @@ import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { checkDatabaseHealth } from './db.mjs';
+import { checkDatabaseHealth, getPool } from './db.mjs';
 import { globalCache } from './cache.mjs';
 import { extractFinalText } from './extract-text.mjs';
+import { retrieveCandidates } from '../js/retrieve.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT_DIR = path.resolve(__dirname, '..');
@@ -99,31 +100,44 @@ const server = http.createServer(async (req, res) => {
     req.on('end', async () => {
       try {
         const payload = JSON.parse(body || '{}');
-        // Serve local catalog fallback
-        const catalogPath = path.join(ROOT_DIR, 'demo/catalog.json');
+        const catalogPath = path.join(ROOT_DIR, 'catalog/catalog.json');
         const catalogData = JSON.parse(fs.readFileSync(catalogPath, 'utf-8'));
-        
-        // Filter based on traits / occasion
-        const queryTraits = (payload.traits || []).map(t => t.toLowerCase());
-        const occasion = (payload.occasion || '').toLowerCase();
 
-        let filtered = catalogData.map(item => {
-          let score = 0.3; // base score
-          const tags = item.tags.map(t => t.toLowerCase());
-          const matchCount = queryTraits.filter(t => tags.includes(t) || item.title.toLowerCase().includes(t)).length;
-          score += matchCount * 0.2;
-          if (occasion && item.occasions.map(o => o.toLowerCase()).includes(occasion)) {
-            score += 0.2;
+        const pool = getPool();
+        // If pg database is active with catalog_items table, query it
+        if (pool && await checkDatabaseHealth()) {
+          try {
+            const client = await pool.connect();
+            try {
+              // Full text query with tsv
+              const queryText = (payload.traits || []).join(' ') + ' ' + (payload.occasion || '');
+              const ftsRes = await client.query(
+                `SELECT id, payload FROM catalog_items 
+                 WHERE tsv @@ plainto_tsquery('english', $1) 
+                 ORDER BY ts_rank_cd(tsv, plainto_tsquery('english', $1)) DESC LIMIT 20;`,
+                [queryText]
+              );
+              if (ftsRes.rows.length > 0) {
+                const dbItems = ftsRes.rows.map(r => r.payload);
+                const candidates = retrieveCandidates(dbItems, payload);
+                res.writeHead(200, { 'Content-Type': 'application/json' });
+                res.end(JSON.stringify({ source: 'pgvector_fts', candidates }));
+                return;
+              }
+            } finally {
+              client.release();
+            }
+          } catch {
+            // Fallback to local catalog
           }
-          return { ...item, score };
-        });
+        }
 
-        filtered.sort((a, b) => b.score - a.score);
-
+        // Fast in-memory RRF retrieval from catalog.json
+        const candidates = retrieveCandidates(catalogData, payload);
         res.writeHead(200, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({
-          source: 'local_catalog',
-          candidates: filtered.slice(0, 8)
+          source: 'local_catalog_rrf',
+          candidates
         }));
       } catch (err) {
         res.writeHead(400, { 'Content-Type': 'application/json' });

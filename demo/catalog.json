@@ -1,57 +1,3317 @@
 [
   {
-    "id": "gift-01",
+    "id": "gift-001",
     "kind": "gift",
-    "title": "Ceramic Pour-Over Coffee Dripper",
-    "summary": "Hand-glazed matte stoneware dripper designed for slow, balanced extraction.",
-    "tags": ["coffee", "quiet", "morning", "kitchen", "artisan"],
-    "occasions": ["birthday", "thank-you", "holiday"],
+    "title": "Handmade Ceramic Pour-Over Dripper",
+    "summary": "Stoneware pour-over cone with matte glaze for slow, even manual coffee extraction.",
+    "tags": [
+      "coffee",
+      "quiet",
+      "morning",
+      "ceramic",
+      "kitchen"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday"
+    ],
     "price_band": "medium",
-    "price": 28.00,
+    "price": 28,
     "currency": "EUR"
   },
   {
-    "id": "gift-02",
+    "id": "gift-002",
     "kind": "gift",
-    "title": "Linen Garden Apron with Deep Pockets",
-    "summary": "Washed French flax linen apron with reinforced stitching for tools and seeds.",
-    "tags": ["gardening", "nature", "craft", "outdoor", "slow-living"],
-    "occasions": ["birthday", "anniversary", "holiday"],
-    "price_band": "medium",
-    "price": 36.00,
-    "currency": "EUR"
-  },
-  {
-    "id": "gift-03",
-    "kind": "gift",
-    "title": "Solid Brass Botanical Bookmark",
-    "summary": "Etched fern leaf bookmark in brushed brass that patinas with time.",
-    "tags": ["reading", "books", "quiet", "brass", "botanical"],
-    "occasions": ["birthday", "thank-you", "just-because"],
-    "price_band": "low",
-    "price": 14.00,
-    "currency": "EUR"
-  },
-  {
-    "id": "gift-04",
-    "kind": "gift",
-    "title": "Cast Iron Teapot with Stainless Infuser",
-    "summary": "Traditional heavy tetsubin teapot that retains heat for peaceful afternoon tea rituals.",
-    "tags": ["tea", "quiet", "ritual", "zen", "kitchen"],
-    "occasions": ["birthday", "holiday", "housewarming"],
+    "title": "Cast Iron Tea Kettle with Infuser",
+    "summary": "Heavy Japanese-style tetsubin kettle retaining heat for peaceful gongfu or sencha brewing.",
+    "tags": [
+      "tea",
+      "quiet",
+      "ritual",
+      "cast-iron",
+      "cozy"
+    ],
+    "occasions": [
+      "birthday",
+      "holiday",
+      "anniversary"
+    ],
     "price_band": "high",
-    "price": 54.00,
+    "price": 58,
     "currency": "EUR"
   },
   {
-    "id": "gift-05",
+    "id": "gift-003",
     "kind": "gift",
-    "title": "Handmade Wildflower Seed Paper Notebook",
-    "summary": "Recycled cotton paper journal with plantable seed cover that grows bee-friendly blooms.",
-    "tags": ["gardening", "writing", "quiet", "eco-friendly", "botanical"],
-    "occasions": ["birthday", "thank-you"],
+    "title": "Cold Brew Glass Carafe with Stainless Filter",
+    "summary": "Borosilicate glass pitcher for overnight steep coffee or herbal infusions in the fridge.",
+    "tags": [
+      "coffee",
+      "refreshing",
+      "kitchen",
+      "glass",
+      "summer"
+    ],
+    "occasions": [
+      "birthday",
+      "housewarming"
+    ],
     "price_band": "low",
-    "price": 18.00,
+    "price": 22,
     "currency": "EUR"
+  },
+  {
+    "id": "gift-004",
+    "kind": "gift",
+    "title": "Manual Ceramic Burr Coffee Grinder",
+    "summary": "Hand-crank burr mill delivering precise coarse-to-fine grind without noisy motors.",
+    "tags": [
+      "coffee",
+      "slow-living",
+      "travel",
+      "craft",
+      "morning"
+    ],
+    "occasions": [
+      "birthday",
+      "holiday"
+    ],
+    "price_band": "medium",
+    "price": 35,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-005",
+    "kind": "gift",
+    "title": "Double-Walled Stoneware Espresso Cups",
+    "summary": "Set of two tactile ceramic cups preserving warmth while remaining cool to the touch.",
+    "tags": [
+      "coffee",
+      "ceramic",
+      "cozy",
+      "artisan",
+      "morning"
+    ],
+    "occasions": [
+      "thank-you",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 19,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-006",
+    "kind": "gift",
+    "title": "Organic Loose Leaf Herbal Tisane Blend",
+    "summary": "Chamomile flowers, lemon verbena and lavender harvested for soothing evening stillness.",
+    "tags": [
+      "tea",
+      "relaxing",
+      "herbal",
+      "quiet",
+      "wellness"
+    ],
+    "occasions": [
+      "thank-you",
+      "get-well",
+      "holiday"
+    ],
+    "price_band": "low",
+    "price": 14,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-007",
+    "kind": "gift",
+    "title": "Hand-Carved Olive Wood Measuring Scoop",
+    "summary": "Smooth olive wood tablespoon carved from pruned orchard wood for beans and tea leaves.",
+    "tags": [
+      "woodwork",
+      "coffee",
+      "tea",
+      "kitchen",
+      "eco-friendly"
+    ],
+    "occasions": [
+      "thank-you",
+      "just-because"
+    ],
+    "price_band": "low",
+    "price": 12,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-008",
+    "kind": "gift",
+    "title": "Gooseneck Pouring Kettle with Wooden Handle",
+    "summary": "Precision spout kettle for measured water flow and meditative pour-over brewing.",
+    "tags": [
+      "coffee",
+      "craft",
+      "kitchen",
+      "precision",
+      "morning"
+    ],
+    "occasions": [
+      "birthday",
+      "holiday"
+    ],
+    "price_band": "medium",
+    "price": 42,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-009",
+    "kind": "gift",
+    "title": "French Flax Linen Garden Apron",
+    "summary": "Cross-back pre-washed linen apron with deep reinforced split pockets for shears and seeds.",
+    "tags": [
+      "gardening",
+      "linen",
+      "nature",
+      "outdoor",
+      "craft"
+    ],
+    "occasions": [
+      "birthday",
+      "anniversary"
+    ],
+    "price_band": "medium",
+    "price": 38,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-010",
+    "kind": "gift",
+    "title": "Forged Carbon Steel Garden Pruning Shears",
+    "summary": "Traditional bypass secateurs with walnut grip and replaceable precision cutting blade.",
+    "tags": [
+      "gardening",
+      "nature",
+      "craft",
+      "outdoor",
+      "precision"
+    ],
+    "occasions": [
+      "birthday",
+      "holiday"
+    ],
+    "price_band": "medium",
+    "price": 45,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-011",
+    "kind": "gift",
+    "title": "Terracotta Self-Watering Ollas Pot",
+    "summary": "Porous unglazed earthenware pot buried in soil for steady subterranean root hydration.",
+    "tags": [
+      "gardening",
+      "eco-friendly",
+      "plants",
+      "slow-living"
+    ],
+    "occasions": [
+      "housewarming",
+      "birthday"
+    ],
+    "price_band": "low",
+    "price": 24,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-012",
+    "kind": "gift",
+    "title": "Heirloom Pollinator Wildflower Seed Vault",
+    "summary": "Twenty packets of native nectar-rich annual and perennial seeds for bumblebees and butterflies.",
+    "tags": [
+      "gardening",
+      "nature",
+      "eco-friendly",
+      "botanical"
+    ],
+    "occasions": [
+      "thank-you",
+      "birthday"
+    ],
+    "price_band": "low",
+    "price": 16,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-013",
+    "kind": "gift",
+    "title": "Solid Copper Indoor Watering Can",
+    "summary": "Miniature curved spout can designed for gentle pinpoint watering of houseplants and moss terrariums.",
+    "tags": [
+      "gardening",
+      "plants",
+      "botanical",
+      "metalwork",
+      "quiet"
+    ],
+    "occasions": [
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "high",
+    "price": 62,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-014",
+    "kind": "gift",
+    "title": "Hand-Blown Glass Propagation Wall Tube",
+    "summary": "Slender test tube mounted on salvaged cedar wood for rooting plant cuttings in sunlight.",
+    "tags": [
+      "plants",
+      "gardening",
+      "decor",
+      "woodwork",
+      "minimalist"
+    ],
+    "occasions": [
+      "housewarming",
+      "thank-you"
+    ],
+    "price_band": "low",
+    "price": 18,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-015",
+    "kind": "gift",
+    "title": "Cedar Bird Nesting Box for Garden Songbirds",
+    "summary": "Untreated cedar shelter with ventilation holes and clean-out hatch for garden finches and tits.",
+    "tags": [
+      "nature",
+      "outdoor",
+      "gardening",
+      "birds",
+      "woodwork"
+    ],
+    "occasions": [
+      "birthday",
+      "holiday"
+    ],
+    "price_band": "medium",
+    "price": 32,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-016",
+    "kind": "gift",
+    "title": "Preserved Natural Forest Moss Terrarium Frame",
+    "summary": "Framed composition of reindeer moss and lichens requiring zero watering or sunlight.",
+    "tags": [
+      "nature",
+      "moss",
+      "decor",
+      "quiet",
+      "botanical"
+    ],
+    "occasions": [
+      "housewarming",
+      "anniversary"
+    ],
+    "price_band": "medium",
+    "price": 48,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-017",
+    "kind": "gift",
+    "title": "Solid Brass Botanical Ginkgo Bookmark",
+    "summary": "Laser-etched brass leaf bookmark that develops a rich golden patina across reading years.",
+    "tags": [
+      "reading",
+      "books",
+      "quiet",
+      "brass",
+      "minimalist"
+    ],
+    "occasions": [
+      "thank-you",
+      "birthday",
+      "just-because"
+    ],
+    "price_band": "low",
+    "price": 14,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-018",
+    "kind": "gift",
+    "title": "Hand-Bound Recycled Cotton Rag Journal",
+    "summary": "Deckle-edge handmade paper bound in vegetable-tanned olive leather with wax cord closure.",
+    "tags": [
+      "writing",
+      "books",
+      "quiet",
+      "artisan",
+      "slow-living"
+    ],
+    "occasions": [
+      "birthday",
+      "anniversary"
+    ],
+    "price_band": "medium",
+    "price": 34,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-019",
+    "kind": "gift",
+    "title": "Warm Amber LED Book Light with Wooden Clip",
+    "summary": "Eye-friendly flicker-free reading lamp with 1800K blue-light-blocking tone for bedtime readers.",
+    "tags": [
+      "reading",
+      "books",
+      "quiet",
+      "cozy",
+      "night"
+    ],
+    "occasions": [
+      "holiday",
+      "birthday"
+    ],
+    "price_band": "low",
+    "price": 21,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-020",
+    "kind": "gift",
+    "title": "Walnut Wood Desktop Book Stand",
+    "summary": "Angled display stand holding open thick cookbooks or hardcovers during quiet study.",
+    "tags": [
+      "reading",
+      "woodwork",
+      "desk",
+      "quiet",
+      "craft"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you"
+    ],
+    "price_band": "medium",
+    "price": 29,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-021",
+    "kind": "gift",
+    "title": "Weighted Sandstone Paperweight & Pen Rest",
+    "summary": "Minimalist natural stone grooved to hold a fountain pen and secure stationery from breezes.",
+    "tags": [
+      "desk",
+      "writing",
+      "minimalist",
+      "quiet",
+      "stone"
+    ],
+    "occasions": [
+      "thank-you",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 17,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-022",
+    "kind": "gift",
+    "title": "Brass Fountain Pen with Extra-Fine Nib",
+    "summary": "Machined heavyweight brass writing instrument accepting international standard ink cartridges.",
+    "tags": [
+      "writing",
+      "brass",
+      "craft",
+      "desk",
+      "artisan"
+    ],
+    "occasions": [
+      "birthday",
+      "anniversary",
+      "holiday"
+    ],
+    "price_band": "high",
+    "price": 65,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-023",
+    "kind": "gift",
+    "title": "Deep Slate Ceramic Reading Mug",
+    "summary": "Wide-mouth textured pottery mug contoured to cradle in both hands with warm tea or cocoa.",
+    "tags": [
+      "cozy",
+      "ceramic",
+      "reading",
+      "quiet",
+      "kitchen"
+    ],
+    "occasions": [
+      "holiday",
+      "thank-you"
+    ],
+    "price_band": "low",
+    "price": 22,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-024",
+    "kind": "gift",
+    "title": "Hand-Poured Soy Wax Cedar & Amber Candle",
+    "summary": "Clean-burning rapeseed and soy candle with cotton wick and calming forest notes.",
+    "tags": [
+      "cozy",
+      "relaxing",
+      "quiet",
+      "scent",
+      "night"
+    ],
+    "occasions": [
+      "holiday",
+      "housewarming",
+      "thank-you"
+    ],
+    "price_band": "low",
+    "price": 18,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-025",
+    "kind": "gift",
+    "title": "Woven Wool & Cotton Textured Throw Blanket",
+    "summary": "Herringbone blanket woven on traditional looms with fringed borders for reading armchairs.",
+    "tags": [
+      "cozy",
+      "textile",
+      "relaxing",
+      "home",
+      "warmth"
+    ],
+    "occasions": [
+      "holiday",
+      "housewarming",
+      "anniversary"
+    ],
+    "price_band": "high",
+    "price": 75,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-026",
+    "kind": "gift",
+    "title": "Felted Wool Slipper Mules with Suede Soles",
+    "summary": "Breathable seamless boiled wool indoor shoes providing arch warmth through winter floors.",
+    "tags": [
+      "cozy",
+      "wool",
+      "relaxing",
+      "home",
+      "winter"
+    ],
+    "occasions": [
+      "holiday",
+      "birthday"
+    ],
+    "price_band": "medium",
+    "price": 48,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-027",
+    "kind": "gift",
+    "title": "Natural Lava Stone Essential Oil Diffuser",
+    "summary": "Porous volcanic pebble resting in an acacia wood bowl for heat-free scent dispersion.",
+    "tags": [
+      "relaxing",
+      "aromatherapy",
+      "quiet",
+      "minimalist",
+      "wellness"
+    ],
+    "occasions": [
+      "thank-you",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 20,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-028",
+    "kind": "gift",
+    "title": "Handmade Beeswax Pillar Candle Set",
+    "summary": "Three honeycomb-textured rolled 100% pure beeswax pillars with subtle natural honey scent.",
+    "tags": [
+      "cozy",
+      "beeswax",
+      "natural",
+      "light",
+      "craft"
+    ],
+    "occasions": [
+      "holiday",
+      "thank-you"
+    ],
+    "price_band": "low",
+    "price": 24,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-029",
+    "kind": "gift",
+    "title": "Carved Cherry Wood Cooking Spoon",
+    "summary": "Balanced stirring paddle hand-rubbed with organic walnut oil, safe for delicate enameled cookware.",
+    "tags": [
+      "cooking",
+      "kitchen",
+      "woodwork",
+      "craft",
+      "slow-living"
+    ],
+    "occasions": [
+      "housewarming",
+      "thank-you"
+    ],
+    "price_band": "low",
+    "price": 16,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-030",
+    "kind": "gift",
+    "title": "Granite Mortar and Pestle for Whole Spices",
+    "summary": "Heavy unpolished granite bowl ideal for grinding peppercorns, roasted cumin and pesto.",
+    "tags": [
+      "cooking",
+      "kitchen",
+      "artisan",
+      "food",
+      "craft"
+    ],
+    "occasions": [
+      "birthday",
+      "housewarming"
+    ],
+    "price_band": "medium",
+    "price": 38,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-031",
+    "kind": "gift",
+    "title": "Raw Honey Sampler from Mountain Apiaries",
+    "summary": "Three jars of unpasteurized wildflower, chestnut and lavender honey with olive wood dipper.",
+    "tags": [
+      "food",
+      "sweet",
+      "nature",
+      "tea",
+      "artisan"
+    ],
+    "occasions": [
+      "holiday",
+      "thank-you"
+    ],
+    "price_band": "medium",
+    "price": 26,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-032",
+    "kind": "gift",
+    "title": "Pocket Watercolor Sketchbook & Brass Clip",
+    "summary": "Cold-press cotton watercolor paper with cloth binding and miniature mixing palette.",
+    "tags": [
+      "art",
+      "painting",
+      "craft",
+      "quiet",
+      "creativity"
+    ],
+    "occasions": [
+      "birthday",
+      "holiday"
+    ],
+    "price_band": "low",
+    "price": 23,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-033",
+    "kind": "gift",
+    "title": "Handmade Ceramic Paint Palette with Wells",
+    "summary": "Porcelain artist tray with ten mixing wells that washes clean without pigment staining.",
+    "tags": [
+      "art",
+      "ceramic",
+      "painting",
+      "craft",
+      "studio"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you"
+    ],
+    "price_band": "medium",
+    "price": 32,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-034",
+    "kind": "gift",
+    "title": "Basswood Whittling Starter Knife and Strop",
+    "summary": "High-carbon curved whittling tool with protective leather sheath and honing compound.",
+    "tags": [
+      "woodwork",
+      "craft",
+      "hands-on",
+      "outdoor",
+      "mindful"
+    ],
+    "occasions": [
+      "birthday",
+      "holiday"
+    ],
+    "price_band": "medium",
+    "price": 36,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-035",
+    "kind": "gift",
+    "title": "Miniature Brass Hourglass with Dark Sand",
+    "summary": "Ten-minute glass timer for quiet pauses, tea steeping, or uninterrupted morning journaling.",
+    "tags": [
+      "quiet",
+      "time",
+      "desk",
+      "brass",
+      "mindful"
+    ],
+    "occasions": [
+      "thank-you",
+      "just-because"
+    ],
+    "price_band": "low",
+    "price": 22,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-036",
+    "kind": "gift",
+    "title": "Cast Bronze Incense Burner Bowl",
+    "summary": "Heavy brushed bronze vessel for sand, white sage leaves, or Japanese incense sticks.",
+    "tags": [
+      "quiet",
+      "ritual",
+      "scent",
+      "metalwork",
+      "mindful"
+    ],
+    "occasions": [
+      "housewarming",
+      "birthday"
+    ],
+    "price_band": "medium",
+    "price": 35,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-037",
+    "kind": "gift",
+    "title": "Linen Bread Proofing Basket (Banneton)",
+    "summary": "Natural rattan spiral proofing bowl with removable washable linen liner for crusty sourdough.",
+    "tags": [
+      "baking",
+      "bread",
+      "kitchen",
+      "craft",
+      "slow-living"
+    ],
+    "occasions": [
+      "housewarming",
+      "birthday"
+    ],
+    "price_band": "low",
+    "price": 19,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-038",
+    "kind": "gift",
+    "title": "Hand-Turned Maple Salt Cellar with Swivel Lid",
+    "summary": "Smooth hardwood seasoning keeper with magnetic latch for flaky sea salt at the stove.",
+    "tags": [
+      "cooking",
+      "woodwork",
+      "kitchen",
+      "craft",
+      "artisan"
+    ],
+    "occasions": [
+      "housewarming",
+      "thank-you"
+    ],
+    "price_band": "medium",
+    "price": 28,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-039",
+    "kind": "gift",
+    "title": "Japanese Ceramic Ramen Bowls (Pair)",
+    "summary": "Generous speckled stoneware bowls paired with dark bamboo soup spoons.",
+    "tags": [
+      "cooking",
+      "food",
+      "ceramic",
+      "kitchen",
+      "cozy"
+    ],
+    "occasions": [
+      "anniversary",
+      "housewarming"
+    ],
+    "price_band": "medium",
+    "price": 44,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-040",
+    "kind": "gift",
+    "title": "Forged Iron Herb Drying Rack with S-Hooks",
+    "summary": "Wall-mounted circular iron rail to hang gathered mint, lavender and sage upside down.",
+    "tags": [
+      "gardening",
+      "herbal",
+      "decor",
+      "kitchen",
+      "nature"
+    ],
+    "occasions": [
+      "housewarming",
+      "holiday"
+    ],
+    "price_band": "medium",
+    "price": 31,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-041",
+    "kind": "gift",
+    "title": "Acoustic Wooden Smartphone Amplifier Dock",
+    "summary": "Passive horn carved from solid ashwood amplifying phone podcasts and acoustic tracks without power.",
+    "tags": [
+      "woodwork",
+      "music",
+      "eco-friendly",
+      "desk",
+      "clever"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you"
+    ],
+    "price_band": "low",
+    "price": 25,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-042",
+    "kind": "gift",
+    "title": "Stoneware Matcha Whisk Holder",
+    "summary": "Carefully fashioned matcha whisk holder celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "ceramic",
+      "kitchen",
+      "quiet",
+      "craft",
+      "matcha"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 18,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-043",
+    "kind": "gift",
+    "title": "Stoneware Olive Oil Cruet Bottle",
+    "summary": "Carefully fashioned olive oil cruet bottle celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "ceramic",
+      "kitchen",
+      "quiet",
+      "craft",
+      "olive"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 18,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-044",
+    "kind": "gift",
+    "title": "Stoneware Garlic Roaster Dome",
+    "summary": "Carefully fashioned garlic roaster dome celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "ceramic",
+      "kitchen",
+      "quiet",
+      "craft",
+      "garlic"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 18,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-045",
+    "kind": "gift",
+    "title": "Stoneware Butter Keeper Crock",
+    "summary": "Carefully fashioned butter keeper crock celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "ceramic",
+      "kitchen",
+      "quiet",
+      "craft",
+      "butter"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 18,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-046",
+    "kind": "gift",
+    "title": "Stoneware Incense Leaf Tray",
+    "summary": "Carefully fashioned incense leaf tray celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "ceramic",
+      "kitchen",
+      "quiet",
+      "craft",
+      "incense"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 18,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-047",
+    "kind": "gift",
+    "title": "Hand-Carved Walnut Coffee Tamper",
+    "summary": "Carefully fashioned walnut coffee tamper celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "woodwork",
+      "craft",
+      "kitchen",
+      "slow-living",
+      "walnut"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "medium",
+    "price": 26,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-048",
+    "kind": "gift",
+    "title": "Hand-Carved Oak Butter Spreader Knife",
+    "summary": "Carefully fashioned oak butter spreader knife celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "woodwork",
+      "craft",
+      "kitchen",
+      "slow-living",
+      "oak"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "medium",
+    "price": 26,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-049",
+    "kind": "gift",
+    "title": "Hand-Carved Cherry Chopstick Pair with Rests",
+    "summary": "Carefully fashioned cherry chopstick pair with rests celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "woodwork",
+      "craft",
+      "kitchen",
+      "slow-living",
+      "cherry"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "medium",
+    "price": 26,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-050",
+    "kind": "gift",
+    "title": "Hand-Carved Ashwood Coaster Set (4)",
+    "summary": "Carefully fashioned ashwood coaster set (4) celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "woodwork",
+      "craft",
+      "kitchen",
+      "slow-living",
+      "ashwood"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "medium",
+    "price": 26,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-051",
+    "kind": "gift",
+    "title": "Hand-Carved Birch Tea Caddy Box",
+    "summary": "Carefully fashioned birch tea caddy box celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "woodwork",
+      "craft",
+      "kitchen",
+      "slow-living",
+      "birch"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "medium",
+    "price": 26,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-052",
+    "kind": "gift",
+    "title": "Artisan Beeswax Food Wraps (Pack of 4)",
+    "summary": "Carefully fashioned beeswax food wraps (pack of 4) celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "food",
+      "tea",
+      "eco-friendly",
+      "cozy",
+      "beeswax"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 15,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-053",
+    "kind": "gift",
+    "title": "Artisan Fair-Trade Cocoa & Sea Salt Bar Box",
+    "summary": "Carefully fashioned fair-trade cocoa & sea salt bar box celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "food",
+      "tea",
+      "eco-friendly",
+      "cozy",
+      "fair-trade"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 15,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-054",
+    "kind": "gift",
+    "title": "Artisan Loose Leaf Sencha Green Tea Tin",
+    "summary": "Carefully fashioned loose leaf sencha green tea tin celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "food",
+      "tea",
+      "eco-friendly",
+      "cozy",
+      "loose"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 15,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-055",
+    "kind": "gift",
+    "title": "Artisan Cold-Pressed Walnut Salad Oil",
+    "summary": "Carefully fashioned cold-pressed walnut salad oil celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "food",
+      "tea",
+      "eco-friendly",
+      "cozy",
+      "cold-pressed"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 15,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-056",
+    "kind": "gift",
+    "title": "Artisan Dried Lavender Sachet Trio",
+    "summary": "Carefully fashioned dried lavender sachet trio celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "food",
+      "tea",
+      "eco-friendly",
+      "cozy",
+      "dried"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 15,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-057",
+    "kind": "gift",
+    "title": "Brushed Brass Desktop Card Display Stand",
+    "summary": "Carefully fashioned desktop card display stand celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "brass",
+      "desk",
+      "metalwork",
+      "decor",
+      "desktop"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "medium",
+    "price": 32,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-058",
+    "kind": "gift",
+    "title": "Brushed Brass Plant Mist Spray Bottle",
+    "summary": "Carefully fashioned plant mist spray bottle celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "brass",
+      "desk",
+      "metalwork",
+      "decor",
+      "plant"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "medium",
+    "price": 32,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-059",
+    "kind": "gift",
+    "title": "Brushed Brass Key Ring Carabiner with Leather Tab",
+    "summary": "Carefully fashioned key ring carabiner with leather tab celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "brass",
+      "desk",
+      "metalwork",
+      "decor",
+      "key"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "medium",
+    "price": 32,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-060",
+    "kind": "gift",
+    "title": "Brushed Brass Hexagonal Coaster Set",
+    "summary": "Carefully fashioned hexagonal coaster set celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "brass",
+      "desk",
+      "metalwork",
+      "decor",
+      "hexagonal"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "medium",
+    "price": 32,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-061",
+    "kind": "gift",
+    "title": "Brushed Brass Miniature Herb Scoop",
+    "summary": "Carefully fashioned miniature herb scoop celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "brass",
+      "desk",
+      "metalwork",
+      "decor",
+      "miniature"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "medium",
+    "price": 32,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-062",
+    "kind": "gift",
+    "title": "Organic Linen Kitchen Tea Towel Pair in Ochre",
+    "summary": "Carefully fashioned kitchen tea towel pair in ochre celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "linen",
+      "textile",
+      "kitchen",
+      "cozy",
+      "kitchen"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "medium",
+    "price": 35,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-063",
+    "kind": "gift",
+    "title": "Organic Linen Pillowcase Pair in Forest Moss",
+    "summary": "Carefully fashioned pillowcase pair in forest moss celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "linen",
+      "textile",
+      "kitchen",
+      "cozy",
+      "pillowcase"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "medium",
+    "price": 35,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-064",
+    "kind": "gift",
+    "title": "Organic Linen Drawstring Bread Storage Bag",
+    "summary": "Carefully fashioned drawstring bread storage bag celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "linen",
+      "textile",
+      "kitchen",
+      "cozy",
+      "drawstring"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "medium",
+    "price": 35,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-065",
+    "kind": "gift",
+    "title": "Organic Linen Baking Oven Mitts Pair",
+    "summary": "Carefully fashioned baking oven mitts pair celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "linen",
+      "textile",
+      "kitchen",
+      "cozy",
+      "baking"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "medium",
+    "price": 35,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-066",
+    "kind": "gift",
+    "title": "Organic Linen Washed Linen Table Runner",
+    "summary": "Carefully fashioned washed linen table runner celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "linen",
+      "textile",
+      "kitchen",
+      "cozy",
+      "washed"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "medium",
+    "price": 35,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-067",
+    "kind": "gift",
+    "title": "Crafted Botanical Cyanotype Sun-Print Kit",
+    "summary": "Carefully fashioned botanical cyanotype sun-print kit celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "art",
+      "craft",
+      "creativity",
+      "hands-on",
+      "botanical"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 21,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-068",
+    "kind": "gift",
+    "title": "Crafted Calligraphy Bamboo Dip Pen Set",
+    "summary": "Carefully fashioned calligraphy bamboo dip pen set celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "art",
+      "craft",
+      "creativity",
+      "hands-on",
+      "calligraphy"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 21,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-069",
+    "kind": "gift",
+    "title": "Crafted Hardwood Knitting Needles Set",
+    "summary": "Carefully fashioned hardwood knitting needles set celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "art",
+      "craft",
+      "creativity",
+      "hands-on",
+      "hardwood"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 21,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-070",
+    "kind": "gift",
+    "title": "Crafted Embroidered Wool Bookmark",
+    "summary": "Carefully fashioned embroidered wool bookmark celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "art",
+      "craft",
+      "creativity",
+      "hands-on",
+      "embroidered"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 21,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-071",
+    "kind": "gift",
+    "title": "Crafted Handmade Plant Fibre Paper Pack",
+    "summary": "Carefully fashioned handmade plant fibre paper pack celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "art",
+      "craft",
+      "creativity",
+      "hands-on",
+      "handmade"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 21,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-072",
+    "kind": "gift",
+    "title": "Natural Heritage Handmade Cedar Moth Repellent Blocks",
+    "summary": "Carefully fashioned handmade cedar moth repellent blocks celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "wellness",
+      "relaxing",
+      "bath",
+      "eco-friendly",
+      "handmade"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 16,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-073",
+    "kind": "gift",
+    "title": "Natural Heritage French Savon de Marseille Olive Soap Block",
+    "summary": "Carefully fashioned french savon de marseille olive soap block celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "wellness",
+      "relaxing",
+      "bath",
+      "eco-friendly",
+      "french"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 16,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-074",
+    "kind": "gift",
+    "title": "Natural Heritage Pumice Stone Foot Scrubber with Rope",
+    "summary": "Carefully fashioned pumice stone foot scrubber with rope celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "wellness",
+      "relaxing",
+      "bath",
+      "eco-friendly",
+      "pumice"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 16,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-075",
+    "kind": "gift",
+    "title": "Natural Heritage Bamboo Bath Caddy Tray",
+    "summary": "Carefully fashioned bamboo bath caddy tray celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "wellness",
+      "relaxing",
+      "bath",
+      "eco-friendly",
+      "bamboo"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 16,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-076",
+    "kind": "gift",
+    "title": "Natural Heritage Sisal Bath Brush with Long Handle",
+    "summary": "Carefully fashioned sisal bath brush with long handle celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "wellness",
+      "relaxing",
+      "bath",
+      "eco-friendly",
+      "sisal"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 16,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-077",
+    "kind": "gift",
+    "title": "Botanical Pressed Herbarium Specimen Frame",
+    "summary": "Carefully fashioned pressed herbarium specimen frame celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "gardening",
+      "nature",
+      "plants",
+      "botanical",
+      "pressed"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 19,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-078",
+    "kind": "gift",
+    "title": "Botanical Earthenware Seed Sprouter Dish",
+    "summary": "Carefully fashioned earthenware seed sprouter dish celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "gardening",
+      "nature",
+      "plants",
+      "botanical",
+      "earthenware"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 19,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-079",
+    "kind": "gift",
+    "title": "Botanical Miniature Pruning Snips for Bonsai",
+    "summary": "Carefully fashioned miniature pruning snips for bonsai celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "gardening",
+      "nature",
+      "plants",
+      "botanical",
+      "miniature"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 19,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-080",
+    "kind": "gift",
+    "title": "Botanical Natural Jute Twine Spool with Stand",
+    "summary": "Carefully fashioned natural jute twine spool with stand celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "gardening",
+      "nature",
+      "plants",
+      "botanical",
+      "natural"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 19,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-081",
+    "kind": "gift",
+    "title": "Botanical Zinc Plant Garden Markers (Set of 10)",
+    "summary": "Carefully fashioned zinc plant garden markers (set of 10) celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "gardening",
+      "nature",
+      "plants",
+      "botanical",
+      "zinc"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 19,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-082",
+    "kind": "gift",
+    "title": "Cosy Hearth Hand-Dipped Taper Candles (Box of 6)",
+    "summary": "Carefully fashioned hand-dipped taper candles (box of 6) celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "cozy",
+      "home",
+      "winter",
+      "relaxing",
+      "hand-dipped"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "medium",
+    "price": 27,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-083",
+    "kind": "gift",
+    "title": "Cosy Hearth Cast Iron Trivet with Floral Motif",
+    "summary": "Carefully fashioned cast iron trivet with floral motif celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "cozy",
+      "home",
+      "winter",
+      "relaxing",
+      "cast"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "medium",
+    "price": 27,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-084",
+    "kind": "gift",
+    "title": "Cosy Hearth Wool Felt Laptop Sleeve",
+    "summary": "Carefully fashioned wool felt laptop sleeve celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "cozy",
+      "home",
+      "winter",
+      "relaxing",
+      "wool"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "medium",
+    "price": 27,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-085",
+    "kind": "gift",
+    "title": "Cosy Hearth Knitted Hot Water Bottle Cover",
+    "summary": "Carefully fashioned knitted hot water bottle cover celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "cozy",
+      "home",
+      "winter",
+      "relaxing",
+      "knitted"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "medium",
+    "price": 27,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-086",
+    "kind": "gift",
+    "title": "Cosy Hearth Amber Glass Apothecary Soap Pump",
+    "summary": "Carefully fashioned amber glass apothecary soap pump celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "cozy",
+      "home",
+      "winter",
+      "relaxing",
+      "amber"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "medium",
+    "price": 27,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-087",
+    "kind": "gift",
+    "title": "Atelier Studio Glass Dip Pen with Spiral Reservoir",
+    "summary": "Carefully fashioned glass dip pen with spiral reservoir celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "desk",
+      "writing",
+      "art",
+      "brass",
+      "glass"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "medium",
+    "price": 34,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-088",
+    "kind": "gift",
+    "title": "Atelier Studio Walnut Ink for Sketching & Calligraphy",
+    "summary": "Carefully fashioned walnut ink for sketching & calligraphy celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "desk",
+      "writing",
+      "art",
+      "brass",
+      "walnut"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "medium",
+    "price": 34,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-089",
+    "kind": "gift",
+    "title": "Atelier Studio Cork & Rubber Desk Pad",
+    "summary": "Carefully fashioned cork & rubber desk pad celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "desk",
+      "writing",
+      "art",
+      "brass",
+      "cork"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "medium",
+    "price": 34,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-090",
+    "kind": "gift",
+    "title": "Atelier Studio Brass Folding Ruler with Inch/Metric",
+    "summary": "Carefully fashioned brass folding ruler with inch/metric celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "desk",
+      "writing",
+      "art",
+      "brass",
+      "brass"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "medium",
+    "price": 34,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-091",
+    "kind": "gift",
+    "title": "Atelier Studio Steel Bookends with Geometry Relief",
+    "summary": "Carefully fashioned steel bookends with geometry relief celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "desk",
+      "writing",
+      "art",
+      "brass",
+      "steel"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "medium",
+    "price": 34,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-092",
+    "kind": "gift",
+    "title": "Artisanal Haven Ceramic Spoon Rest in Speckled White",
+    "summary": "Carefully fashioned ceramic spoon rest in speckled white celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "kitchen",
+      "relaxing",
+      "quiet",
+      "craft",
+      "ceramic"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 17,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-093",
+    "kind": "gift",
+    "title": "Artisanal Haven Woven Cotton Market Net Bag",
+    "summary": "Carefully fashioned woven cotton market net bag celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "kitchen",
+      "relaxing",
+      "quiet",
+      "craft",
+      "woven"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 17,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-094",
+    "kind": "gift",
+    "title": "Artisanal Haven Carved Wooden Honey Dipper",
+    "summary": "Carefully fashioned carved wooden honey dipper celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "kitchen",
+      "relaxing",
+      "quiet",
+      "craft",
+      "carved"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 17,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-095",
+    "kind": "gift",
+    "title": "Artisanal Haven Matcha Bamboo Whisk (Chasen)",
+    "summary": "Carefully fashioned matcha bamboo whisk (chasen) celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "kitchen",
+      "relaxing",
+      "quiet",
+      "craft",
+      "matcha"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 17,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-096",
+    "kind": "gift",
+    "title": "Artisanal Haven Aromatic Hinoki Wood Bath Flakes",
+    "summary": "Carefully fashioned aromatic hinoki wood bath flakes celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "kitchen",
+      "relaxing",
+      "quiet",
+      "craft",
+      "aromatic"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 17,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-097",
+    "kind": "gift",
+    "title": "Heritage Workshop Cast Iron Wall Hook with Acorn Finial",
+    "summary": "Carefully fashioned cast iron wall hook with acorn finial celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "craft",
+      "gardening",
+      "woodwork",
+      "artisan",
+      "cast"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "medium",
+    "price": 31,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-098",
+    "kind": "gift",
+    "title": "Heritage Workshop Copper Garden Trowel with Ash Handle",
+    "summary": "Carefully fashioned copper garden trowel with ash handle celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "craft",
+      "gardening",
+      "woodwork",
+      "artisan",
+      "copper"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "medium",
+    "price": 31,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-099",
+    "kind": "gift",
+    "title": "Heritage Workshop Hand-Dyed Indigo Linen Bandana",
+    "summary": "Carefully fashioned hand-dyed indigo linen bandana celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "craft",
+      "gardening",
+      "woodwork",
+      "artisan",
+      "hand-dyed"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "medium",
+    "price": 31,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-100",
+    "kind": "gift",
+    "title": "Heritage Workshop Traditional Japanese Bonsai Trimming Shears",
+    "summary": "Carefully fashioned traditional japanese bonsai trimming shears celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "craft",
+      "gardening",
+      "woodwork",
+      "artisan",
+      "traditional"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "medium",
+    "price": 31,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-101",
+    "kind": "gift",
+    "title": "Heritage Workshop Leather Coaster Set with Stamped Monogram",
+    "summary": "Carefully fashioned leather coaster set with stamped monogram celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "craft",
+      "gardening",
+      "woodwork",
+      "artisan",
+      "leather"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "medium",
+    "price": 31,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-102",
+    "kind": "gift",
+    "title": "Nordic Slow Birch Wood Candle Arch with LED Glow",
+    "summary": "Carefully fashioned birch wood candle arch with led glow celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "cozy",
+      "winter",
+      "quiet",
+      "nature",
+      "birch"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 23,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-103",
+    "kind": "gift",
+    "title": "Nordic Slow Felted Wool Trivet Balls",
+    "summary": "Carefully fashioned felted wool trivet balls celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "cozy",
+      "winter",
+      "quiet",
+      "nature",
+      "felted"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 23,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-104",
+    "kind": "gift",
+    "title": "Nordic Slow Enamel Camping Mug with Pine Tree Motif",
+    "summary": "Carefully fashioned enamel camping mug with pine tree motif celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "cozy",
+      "winter",
+      "quiet",
+      "nature",
+      "enamel"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 23,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-105",
+    "kind": "gift",
+    "title": "Nordic Slow Handmade Pine Needle Incense Cones",
+    "summary": "Carefully fashioned handmade pine needle incense cones celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "cozy",
+      "winter",
+      "quiet",
+      "nature",
+      "handmade"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 23,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-106",
+    "kind": "gift",
+    "title": "Nordic Slow Woolen Hand-Knitted Fingerless Gloves",
+    "summary": "Carefully fashioned woolen hand-knitted fingerless gloves celebrating authentic materials and timeless craftsmanship.",
+    "tags": [
+      "cozy",
+      "winter",
+      "quiet",
+      "nature",
+      "woolen"
+    ],
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "holiday",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "price": 23,
+    "currency": "EUR"
+  },
+  {
+    "id": "diy-001",
+    "kind": "diy",
+    "title": "Upcycled Ceramic Cup Herb Garden",
+    "summary": "Transform an unused thrifted mug or pottery bowl into a thriving indoor kitchen herb planter.",
+    "tags": [
+      "gardening",
+      "plants",
+      "kitchen",
+      "eco-friendly",
+      "craft"
+    ],
+    "occasions": [
+      "birthday",
+      "housewarming",
+      "thank-you"
+    ],
+    "price_band": "low",
+    "materials": [
+      {
+        "name": "Ceramic cup or thrifted mug",
+        "qty": "1"
+      },
+      {
+        "name": "Small drainage pebbles",
+        "qty": "1 cup"
+      },
+      {
+        "name": "Organic potting compost",
+        "qty": "2 cups"
+      },
+      {
+        "name": "Herb seedling (thyme or mint)",
+        "qty": "1 plant"
+      }
+    ],
+    "steps": [
+      {
+        "text": "Wash and dry the ceramic cup thoroughly."
+      },
+      {
+        "text": "Add a 2cm layer of small pebbles at the bottom for vital drainage."
+      },
+      {
+        "text": "Fill the cup two-thirds full with fresh organic potting compost."
+      },
+      {
+        "text": "Carefully nestle the seedling root ball into the center."
+      },
+      {
+        "text": "Top with remaining soil, press gently and moisten with a spray mist."
+      },
+      {
+        "text": "Write the herb name and care instructions on a craft paper tag."
+      }
+    ],
+    "minutes": 30,
+    "difficulty": 1,
+    "safety": null
+  },
+  {
+    "id": "diy-002",
+    "kind": "diy",
+    "title": "Hand-Poured Coffee Bean Soy Candle",
+    "summary": "Infuse warm soy wax with aromatic roasted coffee beans in a reusable glass container.",
+    "tags": [
+      "coffee",
+      "cozy",
+      "scent",
+      "craft",
+      "relaxing"
+    ],
+    "occasions": [
+      "holiday",
+      "birthday",
+      "thank-you"
+    ],
+    "price_band": "low",
+    "materials": [
+      {
+        "name": "Natural soy wax flakes",
+        "qty": "180g"
+      },
+      {
+        "name": "Lead-free cotton wick with metal tab",
+        "qty": "1"
+      },
+      {
+        "name": "Whole roasted coffee beans",
+        "qty": "2 tbsp"
+      },
+      {
+        "name": "Small heat-resistant glass jar",
+        "qty": "1"
+      }
+    ],
+    "steps": [
+      {
+        "text": "Secure the wick metal tab to the center bottom of the glass jar."
+      },
+      {
+        "text": "Melt soy wax flakes slowly in a heatproof bowl set over simmering water."
+      },
+      {
+        "text": "Once liquid, stir in a spoonful of fragrant roasted coffee beans."
+      },
+      {
+        "text": "Pour warm wax into the jar, supporting the wick between wooden skewers."
+      },
+      {
+        "text": "Allow the candle to solidify at room temperature for at least 4 hours."
+      },
+      {
+        "text": "Trim the wick to 5mm before wrapping."
+      }
+    ],
+    "minutes": 45,
+    "difficulty": 2,
+    "safety": "Adult supervision required when handling simmering water and melted hot wax."
+  },
+  {
+    "id": "diy-003",
+    "kind": "diy",
+    "title": "Pressed Fern & Botanical Glass Bookmark",
+    "summary": "Preserve delicate pressed forest ferns between transparent laminate film trimmed with silk ribbon.",
+    "tags": [
+      "reading",
+      "nature",
+      "botanical",
+      "craft",
+      "quiet"
+    ],
+    "occasions": [
+      "thank-you",
+      "birthday",
+      "just-because"
+    ],
+    "price_band": "low",
+    "materials": [
+      {
+        "name": "Pressed dried fern frond or wildflower",
+        "qty": "1 stem"
+      },
+      {
+        "name": "Heavyweight watercolor paper card",
+        "qty": "1 strip (5x15cm)"
+      },
+      {
+        "name": "Cold-laminating self-adhesive sheets",
+        "qty": "2"
+      },
+      {
+        "name": "Hand-dyed silk or cotton ribbon",
+        "qty": "20cm"
+      }
+    ],
+    "steps": [
+      {
+        "text": "Arrange the dried botanicals flat against the paper strip."
+      },
+      {
+        "text": "Smooth clear laminate film across both sides, squeezing out air bubbles."
+      },
+      {
+        "text": "Neatly trim the laminate borders with scissors leaving a 3mm sealed edge."
+      },
+      {
+        "text": "Punch a neat hole in the center top using a hole punch."
+      },
+      {
+        "text": "Thread the silk ribbon through and tie a classic lark's head knot."
+      }
+    ],
+    "minutes": 25,
+    "difficulty": 1,
+    "safety": null
+  },
+  {
+    "id": "diy-004",
+    "kind": "diy",
+    "title": "Handmade Lavender & Sea Salt Bath Soak",
+    "summary": "Blend mineral-rich Epsom salt with organic dried lavender blossoms and soothing jojoba oil.",
+    "tags": [
+      "relaxing",
+      "wellness",
+      "cozy",
+      "nature",
+      "bath"
+    ],
+    "occasions": [
+      "thank-you",
+      "holiday",
+      "birthday"
+    ],
+    "price_band": "low",
+    "materials": [
+      {
+        "name": "Epsom magnesium salt",
+        "qty": "250g"
+      },
+      {
+        "name": "Coarse French sea salt",
+        "qty": "100g"
+      },
+      {
+        "name": "Dried organic lavender buds",
+        "qty": "3 tbsp"
+      },
+      {
+        "name": "Jojoba or sweet almond oil",
+        "qty": "1 tbsp"
+      },
+      {
+        "name": "Apothecary glass jar with cork",
+        "qty": "1"
+      }
+    ],
+    "steps": [
+      {
+        "text": "Combine Epsom salts and coarse sea salt in a clean mixing bowl."
+      },
+      {
+        "text": "Drizzle jojoba oil across the salts and stir thoroughly with a wooden spoon."
+      },
+      {
+        "text": "Fold in dried lavender buds until evenly scattered throughout."
+      },
+      {
+        "text": "Spoon the bath salt mixture into the airtight glass jar."
+      },
+      {
+        "text": "Seal with the cork and label with recommended scoop instructions."
+      }
+    ],
+    "minutes": 20,
+    "difficulty": 1,
+    "safety": null
+  },
+  {
+    "id": "diy-005",
+    "kind": "diy",
+    "title": "Beeswax & Pine Resin Reusable Food Wraps",
+    "summary": "Coat 100% cotton fabric squares with melted pure beeswax and natural jojoba oil for plastic-free kitchen wraps.",
+    "tags": [
+      "kitchen",
+      "eco-friendly",
+      "beeswax",
+      "craft",
+      "cooking"
+    ],
+    "occasions": [
+      "housewarming",
+      "thank-you",
+      "holiday"
+    ],
+    "price_band": "low",
+    "materials": [
+      {
+        "name": "100% lightweight cotton fabric (25x25cm)",
+        "qty": "2 pieces"
+      },
+      {
+        "name": "Grated organic beeswax",
+        "qty": "40g"
+      },
+      {
+        "name": "Jojoba oil",
+        "qty": "1 tsp"
+      },
+      {
+        "name": "Baking parchment paper",
+        "qty": "2 large sheets"
+      }
+    ],
+    "steps": [
+      {
+        "text": "Pink fabric edges with zig-zag scissors to prevent fraying."
+      },
+      {
+        "text": "Sandwich the fabric between two sheets of baking parchment on an ironing board."
+      },
+      {
+        "text": "Evenly scatter grated beeswax and drizzle drops of jojoba oil across the cloth."
+      },
+      {
+        "text": "Pass a warm iron over the parchment until wax melts smoothly into the fibers."
+      },
+      {
+        "text": "Lift the parchment while warm and wave the fabric for 30 seconds to set."
+      }
+    ],
+    "minutes": 40,
+    "difficulty": 2,
+    "safety": "Exercise care with the hot clothing iron to avoid burns on fingertips."
+  },
+  {
+    "id": "diy-006",
+    "kind": "diy",
+    "title": "Whittled Cedar Wood Jam Spreader",
+    "summary": "Carve a functional breakfast butter and jam knife from a fallen cedar or cherry branch.",
+    "tags": [
+      "woodwork",
+      "kitchen",
+      "craft",
+      "hands-on",
+      "mindful"
+    ],
+    "occasions": [
+      "birthday",
+      "holiday"
+    ],
+    "price_band": "low",
+    "materials": [
+      {
+        "name": "Dry hardwood branch (cedar, birch, cherry)",
+        "qty": "1 piece (20cm)"
+      },
+      {
+        "name": "Assorted sandpaper sheets (120 to 400 grit)",
+        "qty": "3 sheets"
+      },
+      {
+        "name": "Food-grade mineral oil or walnut oil",
+        "qty": "1 tbsp"
+      }
+    ],
+    "steps": [
+      {
+        "text": "Draw the spreader blade and handle silhouette directly on the branch bark."
+      },
+      {
+        "text": "Carefully whittle away excess wood with push-cuts away from your body."
+      },
+      {
+        "text": "Shape the tapered blade edge to approximately 2mm thickness."
+      },
+      {
+        "text": "Sand progressing through 120, 240 and 400 grit until silky smooth."
+      },
+      {
+        "text": "Wipe with food-safe walnut oil to reveal deep wood grain."
+      }
+    ],
+    "minutes": 90,
+    "difficulty": 3,
+    "safety": "Use a sharp whittling knife with cut-resistant thumb guard; always carve away from hands."
+  },
+  {
+    "id": "diy-007",
+    "kind": "diy",
+    "title": "Hand-Stitched Japanese Bookbinding Notebook",
+    "summary": "Bind single sheets of linen paper using traditional Yotsume Toji four-hole thread stitching.",
+    "tags": [
+      "writing",
+      "books",
+      "craft",
+      "quiet",
+      "paper"
+    ],
+    "occasions": [
+      "birthday",
+      "anniversary",
+      "thank-you"
+    ],
+    "price_band": "low",
+    "materials": [
+      {
+        "name": "A5 textured writing paper sheets",
+        "qty": "30 sheets"
+      },
+      {
+        "name": "Heavyweight cardstock for cover",
+        "qty": "2 sheets"
+      },
+      {
+        "name": "Waxed linen bookbinding thread",
+        "qty": "1.5m"
+      },
+      {
+        "name": "Bookbinding awl and needle",
+        "qty": "1 set"
+      }
+    ],
+    "steps": [
+      {
+        "text": "Stack and align the paper sheets neatly between cardstock covers."
+      },
+      {
+        "text": "Mark four evenly spaced hole locations 1cm from the spine edge."
+      },
+      {
+        "text": "Pierce clean holes through the entire stack using the sharp awl."
+      },
+      {
+        "text": "Thread the needle and weave through the holes in the traditional four-hole pattern."
+      },
+      {
+        "text": "Tie off the knot securely at the head corner and trim thread ends."
+      }
+    ],
+    "minutes": 60,
+    "difficulty": 2,
+    "safety": "Take care when piercing dense cardstock with the pointed bookbinding awl."
+  },
+  {
+    "id": "diy-008",
+    "kind": "diy",
+    "title": "Cold-Infused Rosemary & Chili Olive Oil",
+    "summary": "Steep sprigs of garden rosemary and whole dried bird's eye chilies in premium extra virgin olive oil.",
+    "tags": [
+      "cooking",
+      "kitchen",
+      "food",
+      "gardening",
+      "herbal"
+    ],
+    "occasions": [
+      "housewarming",
+      "holiday",
+      "thank-you"
+    ],
+    "price_band": "low",
+    "materials": [
+      {
+        "name": "Extra virgin cold-pressed olive oil",
+        "qty": "250ml"
+      },
+      {
+        "name": "Fresh rosemary sprigs (washed & bone dry)",
+        "qty": "3 sprigs"
+      },
+      {
+        "name": "Whole dried small chilies",
+        "qty": "4"
+      },
+      {
+        "name": "Sterilized glass bottle with swing stopper",
+        "qty": "1"
+      }
+    ],
+    "steps": [
+      {
+        "text": "Ensure the fresh rosemary is completely dry to prevent moisture spoilage."
+      },
+      {
+        "text": "Gently bruise the rosemary leaves with the back of a knife to release aromatics."
+      },
+      {
+        "text": "Insert rosemary stems and whole chilies into the clean glass bottle."
+      },
+      {
+        "text": "Pour extra virgin olive oil over the aromatics until fully submerged."
+      },
+      {
+        "text": "Seal tightly and store in a cool pantry for 7 days before gifting."
+      }
+    ],
+    "minutes": 25,
+    "difficulty": 1,
+    "safety": null
+  },
+  {
+    "id": "diy-009",
+    "kind": "diy",
+    "title": "Clay Essential Oil Aromatherapy Pebble",
+    "summary": "Mold natural terracotta air-dry clay into organic textured palm stones that hold essential oil drops.",
+    "tags": [
+      "relaxing",
+      "craft",
+      "scent",
+      "minimalist",
+      "quiet"
+    ],
+    "occasions": [
+      "thank-you",
+      "just-because"
+    ],
+    "price_band": "low",
+    "materials": [
+      {
+        "name": "Air-dry terracotta or white modeling clay",
+        "qty": "100g"
+      },
+      {
+        "name": "Fresh botanical leaves for pressing texture",
+        "qty": "3"
+      },
+      {
+        "name": "Pure essential oil (cedarwood or bergamot)",
+        "qty": "1 bottle (5ml)"
+      }
+    ],
+    "steps": [
+      {
+        "text": "Roll the modeling clay into smooth round pebble shapes in your palms."
+      },
+      {
+        "text": "Press fresh botanical leaves firmly into the clay surface to leave an imprint."
+      },
+      {
+        "text": "Shape a shallow hollow in the center to catch future oil drops."
+      },
+      {
+        "text": "Let dry undisturbed on a wire rack for 48 hours until hardened."
+      },
+      {
+        "text": "Package in a small muslin pouch alongside the essential oil vial."
+      }
+    ],
+    "minutes": 30,
+    "difficulty": 1,
+    "safety": null
+  },
+  {
+    "id": "diy-010",
+    "kind": "diy",
+    "title": "Hanging Macrame Plant Holder in Natural Jute",
+    "summary": "Knot unbleached jute rope into an airy hanging cradle for potted succulents or trailing ivy.",
+    "tags": [
+      "craft",
+      "plants",
+      "gardening",
+      "decor",
+      "home"
+    ],
+    "occasions": [
+      "housewarming",
+      "birthday"
+    ],
+    "price_band": "low",
+    "materials": [
+      {
+        "name": "3mm twisted natural jute or cotton cord",
+        "qty": "24m"
+      },
+      {
+        "name": "Solid wooden mounting ring",
+        "qty": "1"
+      },
+      {
+        "name": "Wooden beads with large holes",
+        "qty": "8"
+      }
+    ],
+    "steps": [
+      {
+        "text": "Cut eight lengths of cord, each 3 meters long, and loop them through the wooden ring."
+      },
+      {
+        "text": "Secure the top with a neat gathering knot 5cm below the ring."
+      },
+      {
+        "text": "Separate cords into 4 pairs and tie square knots down each strand."
+      },
+      {
+        "text": "Thread wooden beads onto the strands and tie locking half-hitches."
+      },
+      {
+        "text": "Connect adjacent strands 10cm lower to form the basket net for the pot."
+      },
+      {
+        "text": "Finish with a sturdy base gathering knot and trim the tassel evenly."
+      }
+    ],
+    "minutes": 50,
+    "difficulty": 2,
+    "safety": null
+  },
+  {
+    "id": "diy-011",
+    "kind": "diy",
+    "title": "Cinnamon & Orange Stovetop Simmer Pot Kit",
+    "summary": "Dried citrus wheels, cinnamon quills and whole cloves in a mason jar for aromatic home boiling.",
+    "tags": [
+      "cozy",
+      "scent",
+      "kitchen",
+      "holiday"
+    ],
+    "occasions": [
+      "birthday",
+      "holiday",
+      "thank-you",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "materials": [
+      {
+        "name": "Dried orange slices",
+        "qty": "6"
+      },
+      {
+        "name": "Cinnamon sticks",
+        "qty": "4"
+      },
+      {
+        "name": "Whole cloves",
+        "qty": "2 tbsp"
+      },
+      {
+        "name": "Jar",
+        "qty": "1"
+      }
+    ],
+    "steps": [
+      {
+        "text": "Layer dried oranges and cinnamon sticks in jar."
+      },
+      {
+        "text": "Add star anise and whole cloves."
+      },
+      {
+        "text": "Tie twine and recipe instructions to simmer in water."
+      }
+    ],
+    "minutes": 15,
+    "difficulty": 1,
+    "safety": null
+  },
+  {
+    "id": "diy-012",
+    "kind": "diy",
+    "title": "Recycled Cardboard Desktop Sloth Phone Stand",
+    "summary": "Precision cut layered corrugated cardboard creating an ergonomic angled mobile phone cradle.",
+    "tags": [
+      "desk",
+      "eco-friendly",
+      "woodwork",
+      "craft"
+    ],
+    "occasions": [
+      "birthday",
+      "holiday",
+      "thank-you",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "materials": [
+      {
+        "name": "Dense cardboard scraps",
+        "qty": "3 pieces"
+      },
+      {
+        "name": "Craft PVA glue",
+        "qty": "2 tbsp"
+      },
+      {
+        "name": "Ruler and pencil",
+        "qty": "1"
+      }
+    ],
+    "steps": [
+      {
+        "text": "Draw the sloth silhouette with an angled front groove."
+      },
+      {
+        "text": "Carefully cut 4 identical profile slices using craft cutter."
+      },
+      {
+        "text": "Glue the layers together under a heavy book."
+      },
+      {
+        "text": "Sand edges smooth when completely dry."
+      }
+    ],
+    "minutes": 35,
+    "difficulty": 2,
+    "safety": "Adult supervision required when using sharp craft cutter."
+  },
+  {
+    "id": "diy-013",
+    "kind": "diy",
+    "title": "Custom Loose Leaf Tea Blending Box",
+    "summary": "Curate a personalized herbal tea blend combining organic dried peppermint, chamomile and rosehips.",
+    "tags": [
+      "tea",
+      "quiet",
+      "ritual",
+      "herbal"
+    ],
+    "occasions": [
+      "birthday",
+      "holiday",
+      "thank-you",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "materials": [
+      {
+        "name": "Dried peppermint leaves",
+        "qty": "50g"
+      },
+      {
+        "name": "Dried chamomile flowers",
+        "qty": "50g"
+      },
+      {
+        "name": "Dried rosehips",
+        "qty": "30g"
+      },
+      {
+        "name": "Tin caddy",
+        "qty": "1"
+      }
+    ],
+    "steps": [
+      {
+        "text": "Mix dried botanicals gently in a sterile stainless bowl."
+      },
+      {
+        "text": "Funnel the blend into an airtight metal caddy."
+      },
+      {
+        "text": "Write custom brewing instructions (5 min steep at 95°C)."
+      }
+    ],
+    "minutes": 20,
+    "difficulty": 1,
+    "safety": null
+  },
+  {
+    "id": "diy-014",
+    "kind": "diy",
+    "title": "Hand-Rolled Honeycomb Beeswax Tapers",
+    "summary": "Roll pure honeycomb wax sheets tightly around natural cotton wicks without heating.",
+    "tags": [
+      "cozy",
+      "beeswax",
+      "craft",
+      "light"
+    ],
+    "occasions": [
+      "birthday",
+      "holiday",
+      "thank-you",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "materials": [
+      {
+        "name": "Honeycomb wax sheets",
+        "qty": "2"
+      },
+      {
+        "name": "Cotton candle wick",
+        "qty": "40cm"
+      }
+    ],
+    "steps": [
+      {
+        "text": "Lay wax sheet flat at room temperature."
+      },
+      {
+        "text": "Press cotton wick firmly along the leading edge."
+      },
+      {
+        "text": "Roll tightly and evenly keeping edges aligned."
+      },
+      {
+        "text": "Gently press the seam flat with fingertips."
+      }
+    ],
+    "minutes": 20,
+    "difficulty": 1,
+    "safety": null
+  },
+  {
+    "id": "diy-015",
+    "kind": "diy",
+    "title": "Terrarium Moss & River Stone Forest Globe",
+    "summary": "Assemble living cushion moss, charcoal and river pebbles in a sealed decorative glass globe.",
+    "tags": [
+      "nature",
+      "moss",
+      "plants",
+      "gardening"
+    ],
+    "occasions": [
+      "birthday",
+      "holiday",
+      "thank-you",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "materials": [
+      {
+        "name": "Glass jar with glass lid",
+        "qty": "1"
+      },
+      {
+        "name": "Activated charcoal",
+        "qty": "2 tbsp"
+      },
+      {
+        "name": "Fresh cushion moss",
+        "qty": "1 clump"
+      },
+      {
+        "name": "River pebbles",
+        "qty": "10"
+      }
+    ],
+    "steps": [
+      {
+        "text": "Place drainage pebbles at bottom of glass jar."
+      },
+      {
+        "text": "Sprinkle charcoal layer to keep moisture fresh."
+      },
+      {
+        "text": "Arrange clean live moss and river pebbles neatly."
+      },
+      {
+        "text": "Lightly mist with distilled water and seal lid."
+      }
+    ],
+    "minutes": 30,
+    "difficulty": 1,
+    "safety": null
+  },
+  {
+    "id": "diy-016",
+    "kind": "diy",
+    "title": "Botanical Cyanotype Sun-Printed Greeting Cards",
+    "summary": "Expose sun-sensitive paper under pressed foliage outdoors for deep Prussian blue note cards.",
+    "tags": [
+      "art",
+      "nature",
+      "craft",
+      "botanical"
+    ],
+    "occasions": [
+      "birthday",
+      "holiday",
+      "thank-you",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "materials": [
+      {
+        "name": "Pre-treated cyanotype paper cards",
+        "qty": "4"
+      },
+      {
+        "name": "Pressed fern leaves",
+        "qty": "4"
+      },
+      {
+        "name": "Clear glass sheet",
+        "qty": "1"
+      }
+    ],
+    "steps": [
+      {
+        "text": "Place leaves onto cyanotype paper in shade."
+      },
+      {
+        "text": "Weigh down with glass sheet and expose to sunlight for 3 minutes."
+      },
+      {
+        "text": "Rinse card in cool running water for 2 minutes."
+      },
+      {
+        "text": "Dry flat between paper towels to reveal white and blue contrast."
+      }
+    ],
+    "minutes": 40,
+    "difficulty": 2,
+    "safety": null
+  },
+  {
+    "id": "diy-017",
+    "kind": "diy",
+    "title": "Hand-Sewn Linen Coffee Filter Cone",
+    "summary": "Sew washable unbleached linen fabric into a reusable eco-friendly pour-over coffee cone filter.",
+    "tags": [
+      "coffee",
+      "linen",
+      "eco-friendly",
+      "kitchen"
+    ],
+    "occasions": [
+      "birthday",
+      "holiday",
+      "thank-you",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "materials": [
+      {
+        "name": "Raw unbleached linen (20x20cm)",
+        "qty": "1"
+      },
+      {
+        "name": "Cotton thread and needle",
+        "qty": "1"
+      }
+    ],
+    "steps": [
+      {
+        "text": "Fold linen in half and mark the standard cone shape."
+      },
+      {
+        "text": "Stitch the angled side seam with durable double backstitch."
+      },
+      {
+        "text": "Trim seam allowance and turn inside out."
+      },
+      {
+        "text": "Boil in plain water for 10 minutes to pre-shrink and sterilize."
+      }
+    ],
+    "minutes": 45,
+    "difficulty": 2,
+    "safety": null
+  },
+  {
+    "id": "diy-018",
+    "kind": "diy",
+    "title": "Personalized Wood-Burned Cooking Spatula",
+    "summary": "Pyrography etch botanical leaves or recipient initials onto a smooth beechwood spoon handle.",
+    "tags": [
+      "woodwork",
+      "cooking",
+      "craft",
+      "kitchen"
+    ],
+    "occasions": [
+      "birthday",
+      "holiday",
+      "thank-you",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "materials": [
+      {
+        "name": "Plain beechwood spoon",
+        "qty": "1"
+      },
+      {
+        "name": "Pyrography wood burning tool",
+        "qty": "1"
+      }
+    ],
+    "steps": [
+      {
+        "text": "Lightly sketch design onto wood with pencil."
+      },
+      {
+        "text": "Plug in burning tool and allow tip to heat up fully."
+      },
+      {
+        "text": "Trace pencil lines with steady, slow pressure."
+      },
+      {
+        "text": "Allow tool to cool completely on heat-safe stand."
+      }
+    ],
+    "minutes": 35,
+    "difficulty": 2,
+    "safety": "Hot woodburning iron tip reaches high temperatures; adult caution required."
+  },
+  {
+    "id": "diy-019",
+    "kind": "diy",
+    "title": "Dried Orange & Star Anise Kitchen Garland",
+    "summary": "Thread dehydrating citrus rounds and fragrant star anise pods onto rustic natural twine.",
+    "tags": [
+      "holiday",
+      "decor",
+      "kitchen",
+      "nature"
+    ],
+    "occasions": [
+      "birthday",
+      "holiday",
+      "thank-you",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "materials": [
+      {
+        "name": "Dehydrated orange slices",
+        "qty": "12"
+      },
+      {
+        "name": "Star anise pods",
+        "qty": "10"
+      },
+      {
+        "name": "Jute twine",
+        "qty": "2m"
+      },
+      {
+        "name": "Large tapestry needle",
+        "qty": "1"
+      }
+    ],
+    "steps": [
+      {
+        "text": "Thread jute string onto tapestry needle."
+      },
+      {
+        "text": "Alternate piercing through orange centers and tied anise pods."
+      },
+      {
+        "text": "Tie hanging loops at both ends of the garland."
+      }
+    ],
+    "minutes": 30,
+    "difficulty": 1,
+    "safety": null
+  },
+  {
+    "id": "diy-020",
+    "kind": "diy",
+    "title": "Aromatic Cedar Shaving Drawer Sachets",
+    "summary": "Fill breathable cotton muslin pouches with aromatic fresh cedar shavings and dried rosemary.",
+    "tags": [
+      "woodwork",
+      "quiet",
+      "scent",
+      "eco-friendly"
+    ],
+    "occasions": [
+      "birthday",
+      "holiday",
+      "thank-you",
+      "housewarming"
+    ],
+    "price_band": "low",
+    "materials": [
+      {
+        "name": "Muslin drawstring bags",
+        "qty": "3"
+      },
+      {
+        "name": "Natural cedar shavings",
+        "qty": "150g"
+      },
+      {
+        "name": "Dried rosemary leaves",
+        "qty": "2 tbsp"
+      }
+    ],
+    "steps": [
+      {
+        "text": "Mix fragrant cedar shavings and dried rosemary in bowl."
+      },
+      {
+        "text": "Pack generous handfuls into each muslin pouch."
+      },
+      {
+        "text": "Pull drawstring tight and tie double knot."
+      }
+    ],
+    "minutes": 15,
+    "difficulty": 1,
+    "safety": null
   }
 ]

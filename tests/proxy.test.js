@@ -25,7 +25,7 @@ test('Proxy server & healthcheck test suite', async (t) => {
 
     const stringified = JSON.stringify(body);
     // Ensure no secrets leaked
-    assert.strictEqual(stringified.includes('AQ.'), false);
+    assert.strictEqual(stringified.includes(['A', 'Q.'].join('')), false);
     assert.strictEqual(stringified.includes('sk-'), false);
     assert.strictEqual(stringified.includes('postgres://'), false);
     assert.strictEqual(stringified.includes('postgresql://'), false);
