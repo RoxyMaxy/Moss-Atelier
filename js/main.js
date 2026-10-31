@@ -1,7 +1,12 @@
-// js/main.js - Atelier Application Entrypoint
+// js/main.js - Atelier Application Entrypoint with Local Memory and Tracing
 
 import { config } from './config.default.js';
 import { Sloth } from './sloth.js';
+import { rankCandidates } from './rank.js';
+import { curateDIYIdeas } from './diy.js';
+import { generateGiftRationale } from './gemma.js';
+import { memory } from './memory.js';
+import { tracer } from './tracing.js';
 
 // Register Service Worker for offline shell caching
 if ('serviceWorker' in navigator) {
@@ -46,33 +51,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const tracePanel = document.getElementById('trace-panel');
   const traceList = document.getElementById('trace-list');
 
-  const traces = [];
-
-  function addTraceSpan(name, attributes = {}) {
-    // Privacy safeguard: never log recipient, traits, or generated text
-    const cleanAttr = { ...attributes };
-    delete cleanAttr.recipient;
-    delete cleanAttr.traits;
-    delete cleanAttr.text;
-
-    const span = {
-      name,
-      timestamp: new Date().toLocaleTimeString(),
-      attributes: cleanAttr
-    };
-    traces.push(span);
-    if (traces.length > 20) traces.shift();
-
+  // Connect tracer to UI panel
+  tracer.onSpan((spans) => {
     if (toggleTraceBtn) {
-      toggleTraceBtn.textContent = `Agent Traces (${traces.length})`;
+      toggleTraceBtn.textContent = `Agent Traces (${spans.length})`;
     }
-
     if (traceList) {
-      traceList.innerHTML = traces.map(t => 
+      traceList.innerHTML = spans.map(t => 
         `<li><strong>[${t.timestamp}]</strong> ${t.name} ${JSON.stringify(t.attributes)}</li>`
       ).join('');
     }
-  }
+  });
 
   function showState(activeStateEl) {
     [stateIdle, stateSearching, stateResults, stateEmpty, stateError].forEach(el => {
@@ -91,21 +80,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
     showState(stateSearching);
     sloth.setState('searching');
-    addTraceSpan('retrieve.catalog', { mode, trait_count: rawTraits.length, min_budget: minBudget, max_budget: maxBudget });
+
+    tracer.recordSpan('retrieve.catalog', {
+      mode,
+      trait_count: rawTraits.length,
+      min_budget: minBudget,
+      max_budget: maxBudget
+    });
 
     try {
       let catalogItems = [];
-      let diyItems = [];
+      let fallbackDIY = [];
+
+      // Always load fallback DIY
+      try {
+        const fbRes = await fetch('/demo/diy-fallback.json');
+        fallbackDIY = await fbRes.json();
+      } catch {
+        // Quiet
+      }
 
       if (useDemo) {
-        const [catRes, diyRes] = await Promise.all([
-          fetch('/demo/catalog.json'),
-          fetch('/demo/diy-fallback.json')
-        ]);
+        const catRes = await fetch('/demo/catalog.json');
         catalogItems = await catRes.json();
-        diyItems = await diyRes.json();
       } else {
-        // Try server endpoint
         try {
           const res = await fetch('/api/retrieve', {
             method: 'POST',
@@ -116,40 +114,76 @@ document.addEventListener('DOMContentLoaded', () => {
             const data = await res.json();
             catalogItems = data.candidates || [];
           } else {
-            throw new Error('Server returned ' + res.status);
+            throw new Error('API status ' + res.status);
           }
         } catch {
-          // Graceful fallback to demo files
+          // Fallback to local catalog
           const catRes = await fetch('/demo/catalog.json');
           catalogItems = await catRes.json();
         }
-
-        const diyRes = await fetch('/demo/diy-fallback.json');
-        diyItems = await diyRes.json();
       }
 
-      // Filter by Budget (with 10% tolerance)
-      const allowedMax = maxBudget * 1.1;
-      const validGifts = catalogItems.filter(item => {
-        if (!item.price) return true;
-        return item.price <= allowedMax;
+      // Step A: Separate gift items from DIY items in catalog
+      const candidateGifts = catalogItems.filter(item => item.kind === 'gift');
+      const candidateDIY = catalogItems.filter(item => item.kind === 'diy');
+
+      // Step B: Filter gifts against local gift history for THIS recipient
+      const memoryResult = await memory.filterGiftsByHistory(candidateGifts, recipient);
+      const eligibleGifts = memoryResult.kept;
+
+      if (memoryNotice) {
+        if (memoryResult.removedCount > 0) {
+          memoryNotice.hidden = false;
+          memoryNotice.textContent = `Excluded ${memoryResult.removedCount} gift${memoryResult.removedCount > 1 ? 's' : ''} already given to ${recipient}`;
+        } else {
+          memoryNotice.hidden = true;
+        }
+      }
+
+      // Step C: Deterministic ranking of gifts
+      const rankedGifts = rankCandidates(eligibleGifts, {
+        traits: rawTraits,
+        occasion,
+        minBudget,
+        maxBudget
       });
 
-      addTraceSpan('rank.candidates', { total: catalogItems.length, kept: validGifts.length });
+      tracer.recordSpan('rank.candidates', {
+        input_count: candidateGifts.length,
+        filtered_by_history: memoryResult.removedCount,
+        ranked_count: rankedGifts.length
+      });
 
-      if (validGifts.length === 0 && diyItems.length === 0) {
+      // Step D: Curate DIY ideas (2 ideas)
+      const curatedDIY = curateDIYIdeas(candidateDIY, fallbackDIY);
+      tracer.recordSpan('diy.plan', {
+        count: curatedDIY.length
+      });
+
+      // Check empty state
+      if (rankedGifts.length === 0 && curatedDIY.length === 0) {
         showState(stateEmpty);
         sloth.setState('idle');
         return;
       }
 
-      // Render Gifts (BUY)
+      // Step E: Generate / ground rationale
+      const groundedPicks = await generateGiftRationale(rankedGifts, {
+        traits: rawTraits,
+        occasion
+      });
+
+      tracer.recordSpan('gift.rationale', {
+        grounded_count: groundedPicks.length
+      });
+
+      // Render BUY list
       buyList.innerHTML = '';
       if (mode === 'make') {
         buySection.hidden = true;
       } else {
         buySection.hidden = false;
-        validGifts.slice(0, 5).forEach((gift, index) => {
+        groundedPicks.forEach((gift, index) => {
           const card = document.createElement('article');
           card.className = 'result-card';
           card.style.animationDelay = `${index * 80}ms`;
@@ -158,25 +192,43 @@ document.addEventListener('DOMContentLoaded', () => {
               <h4 class="card-title">${gift.title}</h4>
               <span class="card-price">${gift.price ? `€${Number(gift.price).toFixed(2)}` : '€—'}</span>
             </div>
-            <p class="card-reason">Matches ${rawTraits[0] || 'interests'} and fits the occasion.</p>
-            <div class="card-tags">
-              ${(gift.tags || []).map(tag => `<span class="tag-pill">${tag}</span>`).join('')}
+            <p class="card-reason">${gift.why}</p>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 8px;">
+              <div class="card-tags">
+                ${(gift.tags || []).map(tag => `<span class="tag-pill">${tag}</span>`).join('')}
+              </div>
+              <button class="btn-secondary mark-given-btn" style="font-size: 11px; padding: 4px 8px;" data-title="${gift.title}">
+                Mark Given
+              </button>
             </div>
           `;
+
+          // Handle marking gift as given
+          const markBtn = card.querySelector('.mark-given-btn');
+          markBtn.addEventListener('click', async () => {
+            await memory.recordGiftGiven(recipient, gift.title);
+            card.style.opacity = '0.5';
+            markBtn.disabled = true;
+            markBtn.textContent = 'Saved to History ✓';
+          });
+
           buyList.appendChild(card);
         });
       }
 
-      // Render DIY (MAKE)
+      // Render MAKE list (with persistent checklists)
       makeList.innerHTML = '';
       if (mode === 'buy') {
         makeSection.hidden = true;
       } else {
         makeSection.hidden = false;
-        diyItems.slice(0, 2).forEach((diy, index) => {
+        for (let i = 0; i < curatedDIY.length; i++) {
+          const diy = curatedDIY[i];
+          const savedChecks = await memory.getChecklistState(diy.id);
+
           const card = document.createElement('article');
           card.className = 'result-card diy-card';
-          card.style.animationDelay = `${(index + 3) * 80}ms`;
+          card.style.animationDelay = `${(i + 3) * 80}ms`;
           card.innerHTML = `
             <div class="card-header">
               <h4 class="card-title">${diy.title}</h4>
@@ -187,7 +239,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <ul class="checklist">
                 ${(diy.materials || []).map((m, mIdx) => `
                   <li class="checklist-item">
-                    <input type="checkbox" id="mat-${diy.id}-${mIdx}">
+                    <input type="checkbox" id="mat-${diy.id}-${mIdx}" data-index="${mIdx}" ${savedChecks.includes(mIdx) ? 'checked' : ''}>
                     <label for="mat-${diy.id}-${mIdx}">${m.name} (${m.qty})</label>
                   </li>
                 `).join('')}
@@ -201,13 +253,25 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             ${diy.safety ? `<div class="safety-line">⚠ ${diy.safety}</div>` : ''}
           `;
+
+          // Bind checklist state persistence
+          const checkboxes = card.querySelectorAll('input[type="checkbox"]');
+          checkboxes.forEach(cb => {
+            cb.addEventListener('change', async () => {
+              const active = [];
+              checkboxes.forEach(box => {
+                if (box.checked) active.push(Number(box.dataset.index));
+              });
+              await memory.saveChecklistState(diy.id, active);
+            });
+          });
+
           makeList.appendChild(card);
-        });
+        }
       }
 
       showState(stateResults);
       sloth.setState('idle');
-      addTraceSpan('gift.rationale', { count: validGifts.length, diy_count: diyItems.length });
 
     } catch (err) {
       console.error(err);
@@ -231,12 +295,12 @@ document.addEventListener('DOMContentLoaded', () => {
   retryBtn?.addEventListener('click', () => performCuration(false));
   loadDemoBtn?.addEventListener('click', () => performCuration(true));
 
-  resetAllBtn?.addEventListener('click', () => {
+  resetAllBtn?.addEventListener('click', async () => {
+    await memory.resetAll();
     form.reset();
     showState(stateIdle);
-    traces.length = 0;
-    addTraceSpan('system.reset', { cleared: true });
-    alert('Atelier memory and checklists reset.');
+    tracer.recordSpan('system.reset', { cleared: true });
+    alert('Moss Atelier local history and checklist progress have been reset.');
   });
 
   toggleTraceBtn?.addEventListener('click', () => {
@@ -246,5 +310,5 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Initial trace log
-  addTraceSpan('system.init', { mode: 'OFFLINE', shell_ready: true });
+  tracer.recordSpan('system.init', { mode: 'OFFLINE', shell_ready: true });
 });
