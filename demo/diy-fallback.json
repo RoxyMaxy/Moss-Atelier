@@ -1,0 +1,42 @@
+[
+  {
+    "id": "diy-01",
+    "title": "Herb Garden in Upcycled Ceramic Cup",
+    "difficulty": 1,
+    "minutes": 30,
+    "materials": [
+      { "name": "Ceramic mug or thrifted bowl", "qty": "1" },
+      { "name": "Small pebbles for drainage", "qty": "1 cup" },
+      { "name": "Potting soil", "qty": "2 cups" },
+      { "name": "Herb seedling (rosemary or thyme)", "qty": "1 plant" }
+    ],
+    "steps": [
+      { "text": "Wash and dry the ceramic vessel thoroughly." },
+      { "text": "Layer pebbles across the bottom for root drainage." },
+      { "text": "Add potting soil until the container is two-thirds full." },
+      { "text": "Nestle the herb seedling carefully into the center and tamp gently." },
+      { "text": "Water lightly and attach a handwritten care label." }
+    ],
+    "safety": null
+  },
+  {
+    "id": "diy-02",
+    "title": "Aromatic Coffee & Beeswax Candle",
+    "difficulty": 2,
+    "minutes": 45,
+    "materials": [
+      { "name": "Natural soy wax or beeswax flakes", "qty": "150g" },
+      { "name": "Cotton wick with metal tab", "qty": "1" },
+      { "name": "Fresh roasted coffee beans", "qty": "2 tbsp" },
+      { "name": "Recycled glass jar or tin", "qty": "1" }
+    ],
+    "steps": [
+      { "text": "Glue the wick tab to the center bottom of your clean glass jar." },
+      { "text": "Gently melt the wax in a heat-safe bowl over simmering water." },
+      { "text": "Stir in a handful of whole roasted coffee beans as wax reaches liquid state." },
+      { "text": "Carefully pour warm wax into the jar, keeping the wick upright." },
+      { "text": "Allow to cool for 3 hours before trimming wick to 5mm." }
+    ],
+    "safety": "Adult supervision recommended for hot wax melting and pouring."
+  }
+]

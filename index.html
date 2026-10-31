@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moss Atelier — Slow & Steady Gift Workshop</title>
+  <meta name="description" content="A quiet gift discovery workshop powered by open-weight AI. Describe the person. Get gifts worth giving, and ways to make them.">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="stylesheet" href="/css/theme.css">
+  <link rel="stylesheet" href="/css/base.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Atelier Header -->
+  <header class="app-header">
+    <div class="brand">
+      <h1>Moss Atelier</h1>
+      <span class="tagline">Describe the person. Get gifts worth giving, and ways to make them.</span>
+    </div>
+    <div class="header-badges">
+      <span id="mode-badge" class="badge-mode badge-offline" title="Operating with local catalog and offline models">OFFLINE</span>
+    </div>
+  </header>
+
+  <!-- Main Atelier Interface (Two-column on Desktop >= 960px) -->
+  <main id="main-content" class="app-main">
+    
+    <!-- Left Column: Gift Profile Form -->
+    <section class="form-panel" aria-labelledby="form-heading">
+      <div class="form-header">
+        <h2 id="form-heading" class="form-title" style="font-family: var(--font-title); font-size: var(--text-md); color: var(--accent);">Gift Profile</h2>
+        <div class="sloth-container" aria-label="Atelier Sloth Companion">
+          <canvas id="sloth-canvas" width="64" height="64" role="img" aria-label="Pixel sloth resting on a branch"></canvas>
+          <span id="sloth-status" class="sloth-status">RESTING</span>
+        </div>
+      </div>
+
+      <form id="gift-form" novalidate>
+        <!-- Recipient -->
+        <div class="form-group">
+          <label for="recipient-name">Who are you surprising?</label>
+          <input type="text" id="recipient-name" name="recipient" placeholder="e.g. Maria, Lucas, Grandma" required autocomplete="off">
+        </div>
+
+        <!-- Occasion -->
+        <div class="form-group">
+          <label for="occasion">What is the occasion?</label>
+          <select id="occasion" name="occasion">
+            <option value="birthday">Birthday</option>
+            <option value="thank-you">Thank You</option>
+            <option value="holiday">Holiday / Winter</option>
+            <option value="anniversary">Anniversary</option>
+            <option value="housewarming">Housewarming</option>
+            <option value="just-because">Just Because</option>
+          </select>
+        </div>
+
+        <!-- Budget Range (Euros) -->
+        <div class="form-group">
+          <label>Budget Range (€ EUR)</label>
+          <div class="budget-row">
+            <div>
+              <label for="budget-min" class="sr-only" style="display:none;">Minimum Budget</label>
+              <input type="number" id="budget-min" name="budgetMin" min="0" max="1000" value="10" placeholder="Min €">
+            </div>
+            <div>
+              <label for="budget-max" class="sr-only" style="display:none;">Maximum Budget</label>
+              <input type="number" id="budget-max" name="budgetMax" min="5" max="2000" value="50" placeholder="Max €">
+            </div>
+          </div>
+        </div>
+
+        <!-- Traits (Up to 3) -->
+        <div class="form-group">
+          <label for="traits-input">Up to three traits or passions</label>
+          <input type="text" id="traits-input" name="traits" placeholder="e.g. coffee, gardening, quiet" autocomplete="off">
+          <span style="font-size: var(--text-xs); color: var(--muted);">Separate traits with commas</span>
+        </div>
+
+        <!-- Discovery Mode -->
+        <div class="form-group">
+          <label>What should the workshop explore?</label>
+          <div class="mode-switch" role="radiogroup" aria-label="Workshop Mode">
+            <label>
+              <input type="radio" name="searchMode" value="both" checked>
+              <span>Both</span>
+            </label>
+            <label>
+              <input type="radio" name="searchMode" value="buy">
+              <span>Buy Only</span>
+            </label>
+            <label>
+              <input type="radio" name="searchMode" value="make">
+              <span>Make (DIY)</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Action Button -->
+        <button type="submit" id="submit-btn" class="btn-primary">
+          Find Thoughtful Ideas
+        </button>
+      </form>
+    </section>
+
+    <!-- Right Column: Results & Workspace -->
+    <section class="results-panel" aria-labelledby="results-heading">
+      <!-- 6px Woven Brass Band across the top -->
+      <div class="brass-band" aria-hidden="true"></div>
+
+      <div class="results-content">
+        <!-- Results Meta Header -->
+        <div class="results-meta">
+          <h2 id="results-heading" class="results-title">Workshop Curations</h2>
+          <div id="memory-filter-notice" class="memory-notice" hidden aria-live="polite">
+            Excluded 0 gifts already given
+          </div>
+        </div>
+
+        <!-- State 1: Idle State -->
+        <div id="state-idle" class="state-view">
+          <div style="font-size: 32px; color: var(--accent);">✦</div>
+          <h3 class="state-title">A quiet workshop for thoughtful giving.</h3>
+          <p class="state-desc">Describe your recipient on the left. The atelier will search grounded open catalogues to curate 3 to 5 gifts and 2 handmade DIY ideas.</p>
+        </div>
+
+        <!-- State 2: Searching State -->
+        <div id="state-searching" class="state-view" hidden>
+          <div style="font-size: 32px; color: var(--accent);">⏳</div>
+          <h3 class="state-title">Looking for the good ones…</h3>
+          <p class="state-desc">Retrieving from local catalogue, cross-checking past gifts, and preparing craft steps.</p>
+        </div>
+
+        <!-- State 3: Active Results Container -->
+        <div id="state-results" hidden>
+          <!-- BUY Section -->
+          <div id="buy-section">
+            <h3 style="font-family: var(--font-title); font-size: var(--text-md); color: var(--text); margin-bottom: 12px;">Curated Gifts (Buy)</h3>
+            <div id="buy-card-list" class="card-list" role="list"></div>
+          </div>
+
+          <!-- MAKE Section -->
+          <div id="make-section" style="margin-top: 24px;">
+            <h3 style="font-family: var(--font-title); font-size: var(--text-md); color: var(--text); margin-bottom: 12px;">Handmade Ideas (DIY)</h3>
+            <div id="make-card-list" class="card-list" role="list"></div>
+          </div>
+        </div>
+
+        <!-- State 4: Empty Budget State -->
+        <div id="state-empty" class="state-view" hidden>
+          <div style="font-size: 32px; color: var(--danger);">◬</div>
+          <h3 class="state-title">No candidates within budget</h3>
+          <p class="state-desc">We couldn't find suitable grounded items in that exact price band.</p>
+          <button id="raise-budget-btn" class="btn-secondary" style="margin-top: 8px;">Raise budget by 20%</button>
+        </div>
+
+        <!-- State 5: Error State -->
+        <div id="state-error" class="state-view" hidden>
+          <div style="font-size: 32px; color: var(--danger);">✕</div>
+          <h3 id="error-message" class="state-title">A quiet pause occurred.</h3>
+          <p class="state-desc">Could not reach the local engine. You can retry or view our curated demo collection.</p>
+          <div style="display: flex; gap: 8px; margin-top: 8px;">
+            <button id="retry-btn" class="btn-secondary">Try Again</button>
+            <button id="load-demo-btn" class="btn-secondary">Show Demo Ideas</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- App Footer -->
+  <footer class="app-footer">
+    <div class="footer-left">
+      <button id="reset-all-btn" class="btn-secondary" title="Clear IndexedDB gift logs and checklists">Reset everything</button>
+      <button id="toggle-trace-btn" class="btn-secondary">Agent Traces (0)</button>
+    </div>
+    <div class="footer-right" style="font-size: var(--text-xs); color: var(--muted);">
+      <span>Moss Atelier — Hacktoberfest Week 3 "Slow and Steady"</span>
+    </div>
+
+    <!-- Collapsible Trace Panel -->
+    <div id="trace-panel" class="trace-panel" hidden>
+      <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+        <span style="font-weight: bold; color: var(--text);">Agent Observability Spans (Last 20)</span>
+        <span id="trace-status">No sensitive personal data logged</span>
+      </div>
+      <ul id="trace-list" style="list-style: none; display: flex; flex-direction: column; gap: 4px;">
+        <li>[Init] Application initialized in OFFLINE mode.</li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- App Scripts (ES Modules) -->
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

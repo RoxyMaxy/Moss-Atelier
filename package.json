@@ -1,13 +1,22 @@
 {
   "name": "moss-atelier",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Slow and steady gift workshop for Hacktoberfest",
+  "type": "module",
+  "main": "server/proxy.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node --env-file=.env server/proxy.mjs",
+    "build:config": "node scripts/build-config.mjs",
+    "test": "node --test"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "hacktoberfest",
+    "open-source-ai",
+    "offline-first",
+    "gemma",
+    "sloth"
+  ],
+  "author": "RoxyMaxy",
   "license": "ISC",
   "dependencies": {
     "@sentry/browser": "^11.9.0"

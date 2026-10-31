@@ -1,0 +1,57 @@
+[
+  {
+    "id": "gift-01",
+    "kind": "gift",
+    "title": "Ceramic Pour-Over Coffee Dripper",
+    "summary": "Hand-glazed matte stoneware dripper designed for slow, balanced extraction.",
+    "tags": ["coffee", "quiet", "morning", "kitchen", "artisan"],
+    "occasions": ["birthday", "thank-you", "holiday"],
+    "price_band": "medium",
+    "price": 28.00,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-02",
+    "kind": "gift",
+    "title": "Linen Garden Apron with Deep Pockets",
+    "summary": "Washed French flax linen apron with reinforced stitching for tools and seeds.",
+    "tags": ["gardening", "nature", "craft", "outdoor", "slow-living"],
+    "occasions": ["birthday", "anniversary", "holiday"],
+    "price_band": "medium",
+    "price": 36.00,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-03",
+    "kind": "gift",
+    "title": "Solid Brass Botanical Bookmark",
+    "summary": "Etched fern leaf bookmark in brushed brass that patinas with time.",
+    "tags": ["reading", "books", "quiet", "brass", "botanical"],
+    "occasions": ["birthday", "thank-you", "just-because"],
+    "price_band": "low",
+    "price": 14.00,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-04",
+    "kind": "gift",
+    "title": "Cast Iron Teapot with Stainless Infuser",
+    "summary": "Traditional heavy tetsubin teapot that retains heat for peaceful afternoon tea rituals.",
+    "tags": ["tea", "quiet", "ritual", "zen", "kitchen"],
+    "occasions": ["birthday", "holiday", "housewarming"],
+    "price_band": "high",
+    "price": 54.00,
+    "currency": "EUR"
+  },
+  {
+    "id": "gift-05",
+    "kind": "gift",
+    "title": "Handmade Wildflower Seed Paper Notebook",
+    "summary": "Recycled cotton paper journal with plantable seed cover that grows bee-friendly blooms.",
+    "tags": ["gardening", "writing", "quiet", "eco-friendly", "botanical"],
+    "occasions": ["birthday", "thank-you"],
+    "price_band": "low",
+    "price": 18.00,
+    "currency": "EUR"
+  }
+]

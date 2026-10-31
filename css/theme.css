@@ -1,0 +1,45 @@
+/* css/theme.css - "Atelier Night" design tokens */
+
+:root {
+  /* Color Palette */
+  --bg: #12100D;
+  --surface: #1D1914;
+  --surface-2: #2A241C;
+  --text: #F1E9DA;
+  --muted: #A39A89;
+
+  /* Accents */
+  --accent: #D9A441;       /* Brass */
+  --accent2: #7FA37A;      /* Moss */
+  --danger: #D9735B;
+  --focus: #F5D27A;
+
+  /* Borders & Shadows */
+  --border: rgba(217, 164, 65, 0.22);
+  --border-strong: rgba(217, 164, 65, 0.35);
+  --glow: 0 0 24px rgba(217, 164, 65, 0.18);
+
+  /* Geometry & Grid */
+  --radius: 10px;
+  --radius-lg: 16px;
+  --grid-unit: 8px;
+  --content-max: 720px;
+
+  /* Motion */
+  --ease: cubic-bezier(.2, .7, .2, 1);
+  --dur-fast: 150ms;
+  --dur-base: 400ms;
+
+  /* Type Scale */
+  --font-title: 'Fraunces', 'Georgia', 'Playfair Display', serif;
+  --font-body: 'Atkinson Hyperlegible', system-ui, -apple-system, sans-serif;
+  --font-retro: 'Press Start 2P', 'Courier New', monospace;
+
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-md: 19px;
+  --text-lg: 24px;
+  --text-xl: 32px;
+  --text-2xl: 44px;
+}
