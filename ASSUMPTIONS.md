@@ -11,6 +11,9 @@
 - Phase 4 DIY & Safety: Maximum 6 steps enforced. Keyword scanner monitors knife, cutter, heat, iron, glue gun, solder, bleach, battery and automatically supplies generic safety warning if absent.
 - Phase 5 Live Search & Caching: /api/search restricted to google_shopping and youtube with in-memory 24-hour TTL caching (X-Cache header). Parameter search_query used for youtube. Never scrapes third-party shopping sites.
 - Phase 6 Memory & Tracing: IndexedDB database 'moss-atelier' stores recipient-specific gift history and persistent DIY checklist indices. Searching a new recipient reinitializes without cross-contaminating previous gifts; re-searching an existing recipient restores their exclusions. AtelierTracer strictly drops recipient names and trait texts from spans before forwarding to Sentry or the local trace panel.
+- Phase 7 Documentation & Offline Definition: README clearly distinguishes synthetic browser DevTools offline mode (which blocks localhost sockets) from true system offline operation with local models.
+- Phase 8 Deployment: Production manifest defined in render.yaml with secret isolation for keys and plain variables for model names.
+
 
 
 
